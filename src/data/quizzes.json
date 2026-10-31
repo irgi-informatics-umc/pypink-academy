@@ -1,0 +1,233 @@
+[
+  {
+    "level": 1,
+    "question": "Dari mana asal usul nama Python?",
+    "options": [
+      "Dari jenis ular boa peliharaan penciptanya",
+      "Dari serial komedi Monty Python",
+      "Dari singkatan Pretty Young Total Network"
+    ],
+    "answer": 1,
+    "explanation": "Guido van Rossum memberi nama Python karena menyukai tayangan komedi Monty Python!"
+  },
+  {
+    "level": 1,
+    "question": "Bagaimana penulisan fungsi print yang benar di Python?",
+    "options": [
+      "PRINT(\"Halo\")",
+      "Print(\"Halo\")",
+      "print(\"Halo\")"
+    ],
+    "answer": 2,
+    "explanation": "Python peka huruf besar-kecil (case-sensitive), jadi perintah bawaan wajib ditulis huruf kecil: print()."
+  },
+  {
+    "level": 1,
+    "question": "Apa fungsi tanda pagar (#) di awal baris kode?",
+    "options": [
+      "Membuat teks jadi tebal",
+      "Menandai komentar agar tidak dieksekusi Python",
+      "Menghubungkan Python ke internet"
+    ],
+    "answer": 1,
+    "explanation": "Tanda # digunakan untuk menulis komentar yang hanya dibaca manusia."
+  },
+  {
+    "level": 2,
+    "question": "Manakah penulisan variabel yang bertipe float?",
+    "options": [
+      "jarak = 12",
+      "jarak = \"12.5\"",
+      "jarak = 12.5"
+    ],
+    "answer": 2,
+    "explanation": "Float adalah angka yang memiliki desimal bertanda titik tanpa tanda kutip."
+  },
+  {
+    "level": 2,
+    "question": "Apa hasil dari ekspresi type(True)?",
+    "options": [
+      "<class 'str'>",
+      "<class 'bool'>",
+      "<class 'int'>"
+    ],
+    "answer": 1,
+    "explanation": "True dan False adalah nilai dari kelas Boolean (bool)."
+  },
+  {
+    "level": 2,
+    "question": "Manakah nama variabel yang sesuai aturan konvensi PEP 8 di Python?",
+    "options": [
+      "harga_camilan_manis",
+      "Harga-Camilan",
+      "1_harga_camilan"
+    ],
+    "answer": 0,
+    "explanation": "Aturan PEP 8 menyarankan snake_case (huruf kecil dipisah garis bawah) dan tidak boleh diawali angka."
+  },
+  {
+    "level": 3,
+    "question": "Tanda baca apa yang wajib ada di akhir baris pernyataan if di Python?",
+    "options": [
+      "Titik koma (;)",
+      "Titik dua (:)",
+      "Kurung kurawal ({})"
+    ],
+    "answer": 1,
+    "explanation": "Di Python, setiap pembuka blok kode seperti if, elif, else wajib diakhiri tanda titik dua (:)."
+  },
+  {
+    "level": 3,
+    "question": "Berapa jumlah spasi standar untuk indentasi blok kode di Python menurut PEP 8?",
+    "options": [
+      "2 spasi",
+      "4 spasi",
+      "8 spasi"
+    ],
+    "answer": 1,
+    "explanation": "Standar resmi Python PEP 8 merekomendasikan tepat 4 spasi untuk setiap level indentasi."
+  },
+  {
+    "level": 3,
+    "question": "Kapan blok di dalam \"else:\" akan dieksekusi?",
+    "options": [
+      "Selalu dieksekusi setiap saat",
+      "Hanya jika semua kondisi if dan elif sebelumnya bernilai False",
+      "Hanya jika kondisi if bernilai True"
+    ],
+    "answer": 1,
+    "explanation": "Blok else adalah jalan keluar cadangan yang hanya dijalankan ketika tidak ada satupun syarat if/elif yang terpenuhi."
+  },
+  {
+    "level": 4,
+    "question": "Berapa indeks untuk mengambil huruf pertama dari sebuah string di Python?",
+    "options": [
+      "1",
+      "0",
+      "-1"
+    ],
+    "answer": 1,
+    "explanation": "Indeks urutan di Python menganut sistem zero-based indexing (dimulai dari angka 0)."
+  },
+  {
+    "level": 4,
+    "question": "Method apa yang digunakan untuk membuang spasi di awal dan akhir teks?",
+    "options": [
+      ".clean()",
+      ".strip()",
+      ".delete_space()"
+    ],
+    "answer": 1,
+    "explanation": "Method .strip() secara khusus menghapus whitespace di sisi kiri dan kanan string."
+  },
+  {
+    "level": 4,
+    "question": "Apa hasil dari ekspresi \"pipi\"[-1]?",
+    "options": [
+      "\"p\"",
+      "\"i\"",
+      "Error karena angka minus"
+    ],
+    "answer": 1,
+    "explanation": "Indeks negatif -1 mengarah pada elemen terakhir string \"pipi\", yaitu huruf \"i\"."
+  },
+  {
+    "level": 5,
+    "question": "Kata kunci apa yang digunakan untuk mendefinisikan fungsi di Python?",
+    "options": [
+      "function",
+      "def",
+      "create"
+    ],
+    "answer": 1,
+    "explanation": "Di Python, pembuatan fungsi selalu diawali dengan kata kunci \"def\"."
+  },
+  {
+    "level": 5,
+    "question": "Apa nilai kembalian dari fungsi yang tidak memiliki pernyataan return?",
+    "options": [
+      "0",
+      "False",
+      "None"
+    ],
+    "answer": 2,
+    "explanation": "Jika sebuah fungsi selesai dieksekusi tanpa menemui return, Python otomatis mengembalikan nilai None."
+  },
+  {
+    "level": 5,
+    "question": "Apa fungsi dari default parameter pada \"def sapa(nama='Teman'):\"?",
+    "options": [
+      "Memaksa pengguna mengetik nama",
+      "Menyediakan nilai cadangan jika pemanggil tidak mengirim argumen nama",
+      "Menghapus nama yang dikirim"
+    ],
+    "answer": 1,
+    "explanation": "Default argument bertindak sebagai nilai pengganti jika argumen tidak diisi saat pemanggilan."
+  },
+  {
+    "level": 6,
+    "question": "Mengapa penggunaan \"with open(...)\" sangat dianjurkan dibanding open() biasa?",
+    "options": [
+      "Karena membuat file otomatis terenkripsi",
+      "Karena otomatis menutup file setelah selesai meskipun terjadi error",
+      "Supaya ukuran file lebih kecil"
+    ],
+    "answer": 1,
+    "explanation": "Context manager \"with\" menjamin file descriptor selalu ditutup kembali dengan aman tanpa kebocoran resource."
+  },
+  {
+    "level": 6,
+    "question": "Mode file apa yang digunakan untuk menambah teks baru di ujung file tanpa menghapus teks lama?",
+    "options": [
+      "\"r\"",
+      "\"w\"",
+      "\"a\""
+    ],
+    "answer": 2,
+    "explanation": "Mode \"a\" (append) menambahkan data baru di bagian akhir file tanpa menimpa data yang sudah ada."
+  },
+  {
+    "level": 6,
+    "question": "Kapan blok \"finally:\" di dalam struktur try-except akan dijalankan?",
+    "options": [
+      "Hanya jika terjadi error",
+      "Hanya jika tidak ada error",
+      "Selalu dijalankan dalam kondisi apapun"
+    ],
+    "answer": 2,
+    "explanation": "Blok finally dijamin selalu dieksekusi, baik saat blok try berhasil maupun saat memicu exception."
+  },
+  {
+    "level": 7,
+    "question": "Simbol apa yang digunakan di atas nama fungsi untuk memasang sebuah Decorator di Python?",
+    "options": [
+      "#",
+      "@",
+      "$"
+    ],
+    "answer": 1,
+    "explanation": "Simbol @ (at-sign) diletakkan tepat di atas deklarasi fungsi untuk menerapkan decorator."
+  },
+  {
+    "level": 7,
+    "question": "Kata kunci apa yang membedakan fungsi Generator dari fungsi biasa?",
+    "options": [
+      "return",
+      "yield",
+      "produce"
+    ],
+    "answer": 1,
+    "explanation": "Fungsi yang memuat kata kunci yield otomatis menjadi fungsi generator di Python."
+  },
+  {
+    "level": 7,
+    "question": "Apa keunggulan utama menggunakan generator untuk memproses data yang sangat besar?",
+    "options": [
+      "Data langsung otomatis terkirim ke email",
+      "Sangat hemat memori karena data diproduksi satu per satu saat dibutuhkan",
+      "Tidak memerlukan koneksi listrik"
+    ],
+    "answer": 1,
+    "explanation": "Generator bersifat lazy evaluation, hanya mengalokasikan memori untuk satu item aktif pada satu waktu."
+  }
+]

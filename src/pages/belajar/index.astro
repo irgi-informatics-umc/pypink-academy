@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LessonCard from '../../components/LessonCard.astro';
+import lessons from '../../data/lessons.json';
+import projects from '../../data/levelProjects.json';
+import Pipi from '../../components/MascotPipi.astro';
+const levelNames=['','Kenalan dulu','Dasar-dasar','Alur program','Struktur data','Fungsi & modul','Lebih serius','Kode kompleks'];
+const emojis=['🌱','🧃','🧠','🧺','🧁','🛠️','🚀'];
+---
+<BaseLayout title="Peta Belajar Python — PyPink Academy" description="Jelajahi tujuh level Python dari dasar sampai proyek akhir.">
+ <main class="wrap">
+  <header class="page-intro"><span class="eyebrow sticker">Peta petualanganmu</span><h1 class="page-title">Pilih langkah, <span style="color:var(--hot)">bukan jalan pintas</span></h1><p class="lead">Jelajahi 7 level dan {lessons.length} materi. Tiap level ditutup dengan proyek kecil agar kamu bisa mempraktikkan idenya.</p></header>
+  <div class="filters"><input type="search" placeholder="Cari materi, misalnya variabel…" aria-label="Cari materi" data-search-lessons/><div class="filter-chips" aria-label="Filter level"><button class="filter-chip" data-filter-level="all" aria-pressed="true">Semua</button>{levelNames.slice(1).map((name,i)=><button class="filter-chip" data-filter-level={String(i+1)} aria-pressed="false">Level {i+1}</button>)}</div></div>
+  <div class="roadmap">{levelNames.slice(1).map((name,index)=>{const level=index+1;const project=projects.find((item)=>item.level===level);return <section class="level-section" data-roadmap-level={level}><div class="level-heading"><span class="icon-tile">{emojis[index]}</span><div><span class="eyebrow">LEVEL {level}</span><h2 style="font-size:1.8rem;margin:7px 0 0">{name}</h2></div></div><div class="lesson-list">{lessons.filter(lesson=>lesson.level===level).map(lesson=><LessonCard lesson={lesson}/>)}</div>{project&&<article class="project-card"><div><span class="pill">Mini Project · Level {level}</span><h3>{project.project}</h3><p><strong>Topik:</strong> {project.topics}</p></div><ol>{project.steps.map(step=><li>{step}</li>)}</ol></article>}</section>})}</div>
+  <div class="search-empty card" data-search-empty hidden><Pipi mood="thinking"/><h2>Belum ketemu, nih!</h2><p>Coba kata kunci lain. Pipi bantu cari lagi.</p></div>
+  <div style="height:64px"></div>
+ </main>
+</BaseLayout>

@@ -1,0 +1,21 @@
+---
+import '../styles/global.css';
+import '../styles/pages/site.css';
+import '../styles/pages/responsive.css';
+import '../styles/pages/accessibility.css';
+import '../styles/pages/theme.css';
+import '../styles/pages/components.css';
+import '../styles/pages/learning.css';
+import '../styles/pages/redesign.css';
+import Header from '../components/Header.astro';
+import MobileDrawer from '../components/MobileDrawer.astro';
+import Footer from '../components/Footer.astro';
+import BottomBar from '../components/BottomBar.astro';
+import BackToTop from '../components/BackToTop.astro';
+import Toast from '../components/Toast.astro';
+import Ticker from '../components/Ticker.astro';
+const { title = 'PyPink Academy — Belajar Python tanpa pusing', description = 'Belajar Python dari nol sampai level lanjut, pelan-pelan dan menyenangkan.', canonical = Astro.url.href } = Astro.props;
+---
+<!doctype html><html lang="id"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/><meta name="theme-color" content="#fff7fb" media="(prefers-color-scheme: light)"/><meta name="theme-color" content="#1b1130" media="(prefers-color-scheme: dark)"/><meta name="description" content={description}/><link rel="canonical" href={canonical}/><link rel="icon" type="image/svg+xml" href="/favicon.svg"/><meta property="og:type" content="website"/><meta property="og:site_name" content="PyPink Academy"/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta name="twitter:card" content="summary"/><meta name="twitter:title" content={title}/><meta name="twitter:description" content={description}/><title>{title}</title><script is:inline type="module">try{const saved=localStorage.getItem('pypink-theme');document.documentElement.dataset.theme=saved||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{document.documentElement.dataset.theme=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}</script><slot name="head" /></head>
+<body><Ticker/><Header/><MobileDrawer/><div class="drawer-backdrop" data-drawer-backdrop></div><slot/><Footer/><BottomBar/><BackToTop/><Toast/>
+<script defer src="/assets/js/main.js"></script><script defer src="/assets/js/effects.js"></script><script defer src="/assets/js/progress.js"></script><slot name="scripts"/></body></html>

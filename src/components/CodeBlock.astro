@@ -1,0 +1,9 @@
+---
+import { Code } from 'astro:components';
+import Icon from './Icon.astro';
+const { code, filename = 'contoh.py', highlight = [], playground = true } = Astro.props;
+const markLines = (node, line) => {
+  node.properties.class = `${node.properties.class ?? ''} code-line${highlight.includes(line) ? ' is-highlighted' : ''}`.trim();
+};
+---
+<figure class="code-frame"><figcaption><span><Icon name="code" size={17}/> {filename}</span><div><button class="copy-btn" data-copy aria-label={`Salin kode ${filename}`}>▣ Salin</button>{playground && <a class="copy-btn try-code" href="/playground/" data-try-code={code}>▶ Coba di Playground</a>}</div></figcaption><div class="codebox"><Code code={code} lang="python" themes={{ light: 'github-light', dark: 'github-dark' }} defaultColor={false} transformers={[{ name: 'pypink-line-markers', line: markLines }]} /></div></figure>

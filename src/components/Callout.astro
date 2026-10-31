@@ -1,0 +1,6 @@
+---
+const { type = 'tips', title = 'Tips dari Pipi' } = Astro.props;
+import Icon from './Icon.astro';
+const icons = { tips: 'spark', warning: 'spark', fact: 'spark', note: 'book' };
+---
+<aside class={`tip ${type}`}><Icon name={icons[type] ?? icons.tips} class="tip-icon"/><strong>{title}</strong><div class="tip-content"><slot /></div></aside>

@@ -1,0 +1,16 @@
+---
+import Icon from './Icon.astro';
+const { lesson } = Astro.props;
+---
+<a class="card lesson-card" href={`/belajar/${lesson.slug}/`} data-lesson-slug={lesson.slug} data-level={lesson.level}>
+  <span class="icon-tile"><Icon name={lesson.level > 3 ? 'code' : 'book'} size={22}/></span>
+  <div>
+    <h3>{lesson.title}</h3>
+    <p>{lesson.description}</p>
+    <div class="lesson-meta">
+      <span class="pill"><Icon name="clock" size={15}/> {lesson.duration} menit</span>
+      <span class="pill">{lesson.difficulty === 'Gampang' ? '⭐' : lesson.difficulty === 'Lumayan' ? '⭐⭐' : '⭐⭐⭐'} {lesson.difficulty}</span>
+      <span class="pill" data-status>Belum mulai</span>
+    </div>
+  </div>
+</a>

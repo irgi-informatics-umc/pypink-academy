@@ -1,0 +1,86 @@
+.project-card {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+  margin:18px 0 35px;
+  padding:21px;
+  border:3px solid var(--line);
+  background:var(--butter);
+  color:var(--ink-fixed);
+  box-shadow:var(--shadow-sm)
+}
+.project-card h3 {
+  margin:10px 0 5px;
+  color:var(--ink-fixed)
+}
+.project-card p,.project-card li {
+  color:var(--ink-fixed)
+}
+.project-card ol {
+  margin:0;
+  padding-left:24px
+}
+.quiz-level {
+  padding:24px 0 12px;
+  border-bottom:2px dashed var(--line)
+}
+.quiz-grid {
+  grid-template-columns:repeat(2,minmax(0,1fr))
+}
+.score-card {
+  display:flex;
+  align-items:center;
+  gap:14px;
+  width:fit-content;
+  padding:13px 18px;
+  margin-top:18px
+}
+.score-card strong {
+  font:800 1.6rem 'Baloo 2';
+  color:var(--hot)
+}
+.score-card span {
+  font-size:.9rem
+}
+.cheat-search {
+  width:min(100%,500px);
+  margin-top:15px;
+  padding:12px;
+  border:2px solid var(--line);
+  background:var(--surface);
+  color:var(--text)
+}
+.cheat-grid {
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  padding-bottom:60px
+}
+.cheat-card h2 {
+  font-size:1.5rem;
+  margin:14px 0
+}
+.cheat-card .code-frame {
+  margin:12px 0
+}
+.cheat-card .text-link {
+  display:inline-block;
+  margin-top:7px
+}
+.global-progress {
+  white-space:nowrap
+}
+@media(max-width:680px) {
+  .project-card {
+    grid-template-columns:1fr;
+    gap:5px
+  }
+.quiz-grid,.cheat-grid {
+    grid-template-columns:1fr
+  }
+.score-card {
+    width:100%;
+    flex-wrap:wrap
+  }
+.score-card span:last-child {
+    width:100%
+  }
+}

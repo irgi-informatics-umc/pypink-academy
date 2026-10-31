@@ -1,0 +1,2675 @@
+[
+  {
+    "slug": "kenalan-python",
+    "title": "Kenalan dengan Python",
+    "level": 1,
+    "levelName": "Kenalan dulu",
+    "duration": 6,
+    "difficulty": "Gampang",
+    "description": "Mengenal Python, kenapa bahasanya ramah banget buat pemula, dan apa saja yang bisa kamu buat dengannya.",
+    "icon": "fa-wand-magic-sparkles",
+    "pipiTip": "Anggap belajar ngoding kayak belajar bahasa baru saat liburan. Santai aja, kita mulai dari sapaan pertama dulu ya!",
+    "funFact": "Nama Python bukan diambil dari jenis ular loh! Penciptanya, Guido van Rossum, suka banget acara komedi TV BBC era 70-an bernama \"Monty Python's Flying Circus\".",
+    "analogy": {
+      "title": "Python itu kayak bahasa sahabat karibmu",
+      "paragraphs": [
+        "Bayangkan kamu punya sahabat yang pintar banget, tapi dia nggak suka bahasa yang ribet dan berbelit-belit. Kalau kamu minta tolong \"Tolong ingetin aku beli susu\", dia langsung paham tanpa kamu harus menyebutkan rumus fisika atau pasal hukum.",
+        "Nah, Python itu persis seperti sahabat tadi! Dibandingkan bahasa pemrograman lain yang penuh titik koma (<code>;</code>) dan tanda kurung kurawal (<code>{}</code>), Python dirancang agar enak dibaca seperti bahasa Inggris sehari-hari."
+      ]
+    },
+    "concept": {
+      "title": "Kenapa Banyak Orang Jatuh Cinta sama Python?",
+      "lead": "Python adalah bahasa pemrograman serbaguna (<em>general-purpose</em>) yang dipakai oleh pemula hingga ilmuwan di NASA dan pengembang AI kelas dunia.",
+      "points": [
+        "<strong>Sintaks Bersih & Rapi:</strong> Kamu nggak perlu pusing mengingat simbol aneh. Cukup tulis instruksi yang jelas.",
+        "<strong>Serbaguna:</strong> Bisa untuk bikin website, analisis data, kecerdasan buatan (AI), otomatisasi tugas harian, sampai game sederhana.",
+        "<strong>Komunitas Super Hangat:</strong> Jutaan programmer di seluruh dunia siap berbagi tutorial, pustaka gratis, dan jawaban kalau kamu bingung."
+      ]
+    },
+    "codeExample": {
+      "filename": "sapa_dunia.py",
+      "code": "# Program pertama kita di PyPink Academy\npesan = \"Halo dunia! Aku siap belajar Python bareng Pipi 🐍\"\nprint(pesan)\nprint(\"Rasanya semanis segelas boba dingin 🧋\")",
+      "highlight": [
+        2,
+        3
+      ],
+      "explanations": [
+        "<code>#</code> adalah komentar. Python akan mengabaikannya, ini catatan buat kita manusia.",
+        "<code>pesan = \"...\"</code>: kita membuat wadah bernama <code>pesan</code> yang berisi kalimat manis.",
+        "<code>print(pesan)</code>: perintah untuk menampilkan isi wadah <code>pesan</code> ke layar terminal.",
+        "<code>print(\"...\")</code>: kamu juga bisa langsung menampilkan teks tanpa menyimpannya di wadah lebih dulu."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Huruf Besar & Kecil Berbeda!",
+      "text": "Python itu <em>case-sensitive</em>. Kalau kamu menulis <code>Print()</code> dengan huruf P kapital, Python bakal bingung dan mengira itu perintah yang belum pernah dia dengar. Selalu tulis <code>print()</code> dengan huruf kecil ya!"
+    },
+    "practice": {
+      "instruction": "Ganti pesan di bawah dengan nama kamu dan camilan favoritmu hari ini!",
+      "code": "nama = \"Mira\"\ncamilan = \"Donat matcha 🍩\"\nprint(f\"Halo, namaku {nama} dan aku lagi ngemil {camilan}!\")"
+    },
+    "quizzes": [
+      {
+        "id": "kenalan-q1",
+        "question": "Dari mana asal usul nama Python?",
+        "options": [
+          "Dari jenis ular boa peliharaan penciptanya",
+          "Dari serial komedi Monty Python",
+          "Dari singkatan Pretty Young Total Network"
+        ],
+        "answer": 1,
+        "explanation": "Guido van Rossum memberi nama Python karena menyukai tayangan komedi Monty Python!"
+      },
+      {
+        "id": "kenalan-q2",
+        "question": "Bagaimana penulisan fungsi print yang benar di Python?",
+        "options": [
+          "PRINT(\"Halo\")",
+          "Print(\"Halo\")",
+          "print(\"Halo\")"
+        ],
+        "answer": 2,
+        "explanation": "Python peka huruf besar-kecil (case-sensitive), jadi perintah bawaan wajib ditulis huruf kecil: print()."
+      },
+      {
+        "id": "kenalan-q3",
+        "question": "Apa fungsi tanda pagar (#) di awal baris kode?",
+        "options": [
+          "Membuat teks jadi tebal",
+          "Menandai komentar agar tidak dieksekusi Python",
+          "Menghubungkan Python ke internet"
+        ],
+        "answer": 1,
+        "explanation": "Tanda # digunakan untuk menulis komentar yang hanya dibaca manusia."
+      }
+    ],
+    "takeaways": [
+      "Python itu ramah pemula karena sintaksnya mirip bahasa Inggris biasa.",
+      "Gunakan perintah <code>print()</code> untuk menampilkan teks ke layar.",
+      "Python peka terhadap huruf besar dan kecil (case-sensitive)."
+    ]
+  },
+  {
+    "slug": "install-python-editor",
+    "title": "Install Python & Editor Kode",
+    "level": 1,
+    "levelName": "Kenalan dulu",
+    "duration": 8,
+    "difficulty": "Gampang",
+    "description": "Menyiapkan dapur ngodingmu: instal Python 3.12+ dan pasang Visual Studio Code agar nyaman menulis kode.",
+    "icon": "fa-laptop-code",
+    "pipiTip": "Saat menginstal Python di Windows, jangan lupa centang kotak \"Add python.exe to PATH\". Itu kunci ajaibnya!",
+    "funFact": "VS Code punya ribuan tema warna imut seperti pastel pink, kawaii aesthetic, sampai lofi aesthetic!",
+    "analogy": {
+      "title": "Dapur koki dan buku resep",
+      "paragraphs": [
+        "Mau masak kue yang lezat tentu butuh kompor (mesin yang memproses) dan buku catatan resep (tempat menulis bahan-bahannya).",
+        "Di dunia ngoding, Python adalah \"kompornya\" (mesin runtime yang menjalankan kode), sedangkan VS Code adalah \"buku catatan cantiknya\" (editor teks tempat kita mengetik kode dengan rapi dan nyaman)."
+      ]
+    },
+    "concept": {
+      "title": "Langkah Mudah Menyiapkan Lingkungan Belajar",
+      "lead": "Cukup dua aplikasi gratis ini untuk memulai petualangan ngodingmu di laptop atau komputermu.",
+      "points": [
+        "<strong>1. Unduh Python:</strong> Kunjungi situs resmi <code>python.org</code> dan unduh versi stabil terbaru (Python 3.12+).",
+        "<strong>2. Centang \"Add to PATH\":</strong> Pada installer Windows, centang kotak paling bawah agar perintah python bisa dipanggil dari terminal mana saja.",
+        "<strong>3. Pasang VS Code:</strong> Unduh dari <code>code.visualstudio.com</code>, editor gratis paling populer di dunia saat ini.",
+        "<strong>4. Pasang Ekstensi Python:</strong> Buka tab Extensions di VS Code (ikon kotak-kotak di samping kiri), cari \"Python\" dari Microsoft, lalu klik Install."
+      ]
+    },
+    "codeExample": {
+      "filename": "cek_versi.py",
+      "code": "# Cek apakah Python sudah bekerja dengan baik di komputermu\nimport sys\n\nprint(\"Versi Python yang kamu pakai saat ini:\")\nprint(sys.version)\nprint(\"Selamat, dapur ngodingmu sudah siap! 🎉\")",
+      "highlight": [
+        2,
+        5
+      ],
+      "explanations": [
+        "<code>import sys</code>: mengambil alat bawaan Python untuk memeriksa sistem komputermu.",
+        "<code>sys.version</code>: variabel bawaan yang menyimpan angka versi Python yang sedang berjalan.",
+        "Kalau angka depannya adalah 3 (misal 3.12.x), artinya kamu sudah memakai Python versi modern!"
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Lupa Centang \"Add to PATH\"",
+      "text": "Kalau kamu membuka terminal dan mengetik <code>python</code> tapi muncul tulisan \"command not found\" atau malah membuka Microsoft Store, kemungkinan besar kamu lupa mencentang opsi \"Add python.exe to PATH\" saat instalasi. Buka kembali file installer, pilih Modify, lalu centang opsi tersebut."
+    },
+    "practice": {
+      "instruction": "Jalankan kode ini di playground untuk melihat versi Python yang dijalankan browser!",
+      "code": "import platform\nprint(f\"Sistem operasi Python ini: {platform.system()} 💻\")\nprint(f\"Versi rilis: {platform.release()}\")"
+    },
+    "quizzes": [
+      {
+        "id": "install-q1",
+        "question": "Apa fungsi mencentang \"Add python.exe to PATH\" saat instalasi di Windows?",
+        "options": [
+          "Supaya wallpaper laptop berubah jadi pink",
+          "Supaya perintah python bisa dijalankan langsung dari terminal/CMD",
+          "Supaya komputer bisa menjalankan game berat"
+        ],
+        "answer": 1,
+        "explanation": "Menambahkan ke PATH membuat sistem operasi mengenali lokasi perintah python dari command line mana saja."
+      },
+      {
+        "id": "install-q2",
+        "question": "Editor kode apa yang paling direkomendasikan dan gratis untuk pemula?",
+        "options": [
+          "Microsoft Word",
+          "Notepad bawaan",
+          "Visual Studio Code"
+        ],
+        "answer": 2,
+        "explanation": "Visual Studio Code memiliki fitur pewarnaan kode, deteksi error otomatis, dan terminal terintegrasi yang sangat memudahkan pemula."
+      },
+      {
+        "id": "install-q3",
+        "question": "Bagaimana cara mengecek versi Python melalui terminal?",
+        "options": [
+          "python --version",
+          "python tolong cek versi",
+          "check python now"
+        ],
+        "answer": 0,
+        "explanation": "Perintah standar di terminal untuk mengecek versi adalah \"python --version\" atau \"python -V\"."
+      }
+    ],
+    "takeaways": [
+      "Python bertindak sebagai mesin penerjemah, VS Code sebagai editor tempat mengetik.",
+      "Selalu centang opsi \"Add python.exe to PATH\" saat menginstal di Windows.",
+      "Pasang ekstensi resmi Python di VS Code untuk fitur auto-complete dan cek kesalahan otomatis."
+    ]
+  },
+  {
+    "slug": "komentar-dan-error",
+    "title": "Komentar & Membaca Pesan Error",
+    "level": 1,
+    "levelName": "Kenalan dulu",
+    "duration": 7,
+    "difficulty": "Gampang",
+    "description": "Menulis catatan rahasia di kode dan belajar tenang membaca pesan error tanpa rasa panik.",
+    "icon": "fa-bug-slash",
+    "pipiTip": "Pesan error itu bukan tanda kamu gagal, tapi surat cinta dari Python yang memberi tahu letak typo-mu!",
+    "funFact": "Istilah \"bug\" di komputer bermula dari ngengat (serangga sungguhan) yang tersangkut di mesin komputer Harvard Mark II tahun 1947!",
+    "analogy": {
+      "title": "Sticky note di cermin dan alarm pengingat",
+      "paragraphs": [
+        "Komentar itu seperti menempelkan <em>sticky note</em> lucu di cermin meja rias: isinya pengingat buat kamu sendiri (\"jangan lupa pakai sunscreen\"), tapi orang lain yang lewat nggak perlu ikut menjalankan itu.",
+        "Sedangkan pesan error itu seperti alarm pintu mobil yang bunyi saat kamu lupa menutup pintu rapat. Dia nggak marah, dia cuma bilang: \"Hei, ada baut yang belum pas di baris ke-3!\""
+      ]
+    },
+    "concept": {
+      "title": "Dua Sahabat Programmer: Komentar & Traceback",
+      "lead": "Belajar memahami apa yang dikatakan Python saat sesuatu tidak berjalan sesuai rencana.",
+      "points": [
+        "<strong>Komentar Satu Baris:</strong> Diawali tanda pagar <code>#</code>. Apapun setelah tanda ini di baris yang sama akan diabaikan Python.",
+        "<strong>Komentar Multibaris:</strong> Bisa menggunakan tanda kutip tiga (<code>\"\"\"...\"\"\"</code>), sering dipakai untuk dokumentasi (docstring).",
+        "<strong>SyntaxError:</strong> Terjadi kalau kamu salah tata bahasa, misal lupa tutup tanda kutip atau kurung.",
+        "<strong>NameError:</strong> Terjadi kalau kamu memanggil nama variabel yang belum pernah kamu buat sebelumnya."
+      ]
+    },
+    "codeExample": {
+      "filename": "sahabat_error.py",
+      "code": "# Ini adalah komentar: catatan untuk teman kelompok atau diri sendiri\nnama_kucing = \"Boba\"  # Nama kucing kesayangan\n\n# Python akan menampilkan ini dengan lancar:\nprint(f\"Kucingku namanya {nama_kucing} 🐱\")\n\n# Kalau baris bawah ini dinyalakan, akan memicu NameError:\n# print(makanan_favorit) # makanan_favorit belum pernah dibuat!",
+      "highlight": [
+        1,
+        5,
+        8
+      ],
+      "explanations": [
+        "Baris 1 dan 2 diawali <code>#</code>, jadi Python melompatinya tanpa memproses.",
+        "Baris 5 mencetak nama Boba dengan f-string yang manis.",
+        "Baris 8 sengaja dimatikan (diberi tanda pagar/dikomentari) agar tidak memicu <code>NameError</code>."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Tanda Kutip yang Tidak Klop",
+      "text": "Membuka teks dengan tanda kutip ganda <code>\"</code> tapi menutupnya dengan tanda kutip tunggal <code>'</code> akan menyebabkan <code>SyntaxError: unterminated string literal</code>. Pastikan pasangan kutipnya serasi ya!"
+    },
+    "practice": {
+      "instruction": "Perbaiki baris kode berikut agar tidak error lagi dan tampilkan hasilnya!",
+      "code": "# Kode ini awalnya ada typo, yuk perbaiki:\npesan_rahasia = \"Pipi sayang kamu\"\nprint(pesan_rahasia)"
+    },
+    "quizzes": [
+      {
+        "id": "error-q1",
+        "question": "Apa arti pesan error \"NameError: name 'camilan' is not defined\"?",
+        "options": [
+          "Komputer kehabisan memori",
+          "Variabel 'camilan' dipanggil sebelum dibuat nilainya",
+          "Python tidak suka dengan nama camilan"
+        ],
+        "answer": 1,
+        "explanation": "NameError berarti Python mencari sebuah nama variabel tapi belum pernah didefinisikan sebelumnya."
+      },
+      {
+        "id": "error-q2",
+        "question": "Kapan komentar diabaikan oleh Python?",
+        "options": [
+          "Hanya saat komputer mati",
+          "Selalu diabaikan saat kode dijalankan",
+          "Hanya diabaikan jika ada tulisan huruf kecil"
+        ],
+        "answer": 1,
+        "explanation": "Komentar selalu diabaikan oleh interpreter Python karena tujuannya khusus untuk manusia pembaca kode."
+      },
+      {
+        "id": "error-q3",
+        "question": "Apa langkah pertama yang harus kamu lakukan saat melihat error merah di terminal?",
+        "options": [
+          "Panik lalu instal ulang laptop",
+          "Baca baris paling bawah untuk melihat jenis error dan nomor barisnya",
+          "Hapus semua file"
+        ],
+        "answer": 1,
+        "explanation": "Trik programmer handal: baca baris paling bawah dari pesan error untuk melihat jenis error dan letak barisnya!"
+      }
+    ],
+    "takeaways": [
+      "Gunakan tanda pagar <code>#</code> untuk menulis penjelasan kode yang rapi.",
+      "Error adalah petunjuk, bukan vonis bersalah. Baca baris dan nama errornya.",
+      "Periksa tanda kutip berpasangan dan kurung tutup sebelum menjalankan program."
+    ]
+  },
+  {
+    "slug": "variabel-tipe-data",
+    "title": "Variabel & Tipe Data",
+    "level": 2,
+    "levelName": "Dasar-dasar",
+    "duration": 8,
+    "difficulty": "Gampang",
+    "description": "Menyimpan barang di kotak bekal berlabel: berkenalan dengan angka, teks, dan status benar/salah.",
+    "icon": "fa-box-archive",
+    "pipiTip": "Beri nama variabel yang jelas, kayak namain folder foto: daripada cuma \"x\", lebih baik \"harga_mochi\".",
+    "funFact": "Python secara otomatis menebak tipe datamu! Kamu nggak perlu menulis \"int x = 5\" seperti di bahasa C atau Java.",
+    "analogy": {
+      "title": "Variabel itu kotak bekal berlabel manis",
+      "paragraphs": [
+        "Bayangkan kamu punya beberapa kotak bekal transparan di dapur. Kotak pertama kamu tempeli stiker \"camilan\" lalu diisi mochi. Kotak kedua kamu beri label \"jumlah\" lalu diisi angka 5. Kotak ketiga berlabel \"rasa_manis\" dan diisi tanda centang (True).",
+        "Di Python, kotak bekal itu disebut <strong>variabel</strong>, dan isi di dalamnya disebut <strong>nilai (value)</strong> yang memiliki <strong>tipe data</strong> tertentu."
+      ]
+    },
+    "concept": {
+      "title": "Empat Tipe Data Primadona di Python",
+      "lead": "Setiap data punya jenisnya masing-masing agar Python tahu cara memperlakukannya.",
+      "points": [
+        "<strong>str (String):</strong> Teks atau tulisan, wajib diapit tanda kutip (contoh: <code>\"Matcha Latte\"</code>).",
+        "<strong>int (Integer):</strong> Bilangan bulat tanpa koma desimal (contoh: <code>4</code>, <code>100</code>, <code>-2</code>).",
+        "<strong>float (Floating Point):</strong> Angka pecahan atau berkoma desimal, pakai tanda titik (contoh: <code>18.5</code>, <code>3.14</code>).",
+        "<strong>bool (Boolean):</strong> Nilai logika yang hanya bernilai <code>True</code> (benar) atau <code>False</code> (salah)."
+      ]
+    },
+    "codeExample": {
+      "filename": "kotak_bekal.py",
+      "code": "# Menyiapkan kotak-kotak bekal kita\nnama_menu = \"Strawberry Mochi\"  # str (teks)\nporsi = 3                       # int (bilangan bulat)\nharga_satuan = 8500.5           # float (desimal)\ndiskon_pelajar = True           # bool (benar/salah)\n\n# Memeriksa tipe data dengan fungsi bawaan type()\nprint(f\"Menu: {nama_menu} (tipe: {type(nama_menu).__name__})\")\nprint(f\"Porsi: {porsi} (tipe: {type(porsi).__name__})\")\nprint(f\"Harga: Rp{harga_satuan} (tipe: {type(harga_satuan).__name__})\")\nprint(f\"Dapat diskon? {diskon_pelajar}\")",
+      "highlight": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "explanations": [
+        "Baris 2: teks <code>\"Strawberry Mochi\"</code> disimpan di variabel <code>nama_menu</code>.",
+        "Baris 3: angka bulat <code>3</code> disimpan di variabel <code>porsi</code>.",
+        "Baris 4: angka desimal menggunakan titik <code>.</code>, bukan koma.",
+        "Baris 5: <code>True</code> diawali huruf kapital T (begitu juga <code>False</code> dengan F kapital).",
+        "<code>type(nama_menu).__name__</code> dipakai untuk melihat nama tipe datanya secara rapi."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Angka di Dalam Tanda Kutip",
+      "text": "Jika kamu menulis <code>harga = \"5000\"</code> (dengan tanda kutip), Python menganggapnya sebagai teks biasa (str), bukan angka! Jika kamu menjumlahkan <code>\"5\" + \"5\"</code> hasilnya adalah <code>\"55\"</code>, bukan <code>10</code>. Hilangkan tanda kutip jika ingin menyimpan angka matematika!"
+    },
+    "practice": {
+      "instruction": "Buatlah data profil kucingmu dengan 4 tipe data yang berbeda, lalu cetak hasilnya!",
+      "code": "nama_kucing = \"Luna\"\numur_tahun = 2\nberat_kg = 3.8\nsuka_dielus = True\n\nprint(f\"{nama_kucing} berumur {umur_tahun} th, berat {berat_kg} kg. Suka dielus: {suka_dielus}\")"
+    },
+    "quizzes": [
+      {
+        "id": "var-q1",
+        "question": "Manakah penulisan variabel yang bertipe float?",
+        "options": [
+          "jarak = 12",
+          "jarak = \"12.5\"",
+          "jarak = 12.5"
+        ],
+        "answer": 2,
+        "explanation": "Float adalah angka yang memiliki desimal bertanda titik tanpa tanda kutip."
+      },
+      {
+        "id": "var-q2",
+        "question": "Apa hasil dari ekspresi type(True)?",
+        "options": [
+          "<class 'str'>",
+          "<class 'bool'>",
+          "<class 'int'>"
+        ],
+        "answer": 1,
+        "explanation": "True dan False adalah nilai dari kelas Boolean (bool)."
+      },
+      {
+        "id": "var-q3",
+        "question": "Manakah nama variabel yang sesuai aturan konvensi PEP 8 di Python?",
+        "options": [
+          "harga_camilan_manis",
+          "Harga-Camilan",
+          "1_harga_camilan"
+        ],
+        "answer": 0,
+        "explanation": "Aturan PEP 8 menyarankan snake_case (huruf kecil dipisah garis bawah) dan tidak boleh diawali angka."
+      }
+    ],
+    "takeaways": [
+      "Variabel menyimpan nilai yang bisa digunakan berkali-kali.",
+      "Empat tipe data dasar: str (teks), int (bulat), float (desimal), bool (logika).",
+      "Gunakan snake_case untuk penamaan variabel yang bersih dan mudah dibaca."
+    ]
+  },
+  {
+    "slug": "input-output",
+    "title": "Input & Output Interaktif",
+    "level": 2,
+    "levelName": "Dasar-dasar",
+    "duration": 7,
+    "difficulty": "Gampang",
+    "description": "Mengobrol dua arah dengan programmu: menerima ketikan keyboard dan membalas dengan manis.",
+    "icon": "fa-comments",
+    "pipiTip": "Ingat baik-baik: apapun yang diketik pengguna lewat input() akan selalu diterima Python dalam bentuk teks (str)!",
+    "funFact": "Fungsi input() di Python punya parameter prompt bawaan, jadi kamu bisa menulis pesan di dalam tanda kurungnya langsung!",
+    "analogy": {
+      "title": "Pelayan ramah di kasir kedai kopi",
+      "paragraphs": [
+        "Ketika kamu datang ke kedai kopi, kasir ramah menyapa: \"Halo kak, mau pesan minuman apa?\". Kamu lalu menjawab: \"Caramel Latte\". Kasir mencatat pesananmu, lalu barista menyiapkan minuman dan menyerahkannya padamu.",
+        "Di Python, kasir ramah itu adalah fungsi <code>input()</code> yang menunggu kamu mengetik, sedangkan barista yang menyerahkan minuman ke tanganmu adalah <code>print()</code>!"
+      ]
+    },
+    "concept": {
+      "title": "Cara Berkomunikasi dengan Pengguna",
+      "lead": "Program yang interaktif terasa hidup karena bisa menanggapi kemauan pengguna.",
+      "points": [
+        "<strong>input(\"Pesan prompt\"):</strong> Menampilkan pesan ajakan, menjeda program, lalu menunggu pengguna menekan Enter.",
+        "<strong>Hasil input selalu str:</strong> Meskipun pengguna mengetik angka <code>100</code>, Python menyimpannya sebagai string <code>\"100\"</code>.",
+        "<strong>print(..., sep=\" \", end=\"\\n\"):</strong> Bisa menerima beberapa data sekaligus dan mengatur pemisah serta akhiran baris."
+      ]
+    },
+    "codeExample": {
+      "filename": "kafe_pipi.py",
+      "code": "# Program kasir kafe mini yang ramah\nprint(\"✨ Selamat datang di Kafe Kucing Pipi ✨\")\nnama_pelanggan = \"Aira\"  # Simulasi input untuk demo\npesanan = \"Matcha Ice Cream\"\n\n# Menyapa pelanggan dengan sopan\nprint(f\"Senang bertemu denganmu, {nama_pelanggan}!\")\nprint(f\"Satu porsi {pesanan} sedang disiapkan barista 🍵\")",
+      "highlight": [
+        2,
+        7,
+        8
+      ],
+      "explanations": [
+        "Baris 2 mencetak banner pembuka selamat datang.",
+        "Di terminal sungguhan, kamu bisa mengganti baris 3 dengan <code>nama_pelanggan = input(\"Siapa namamu? \")</code>.",
+        "Baris 7 dan 8 menggabungkan variabel ke dalam kalimat menggunakan f-string."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Langsung Menjumlahkan Hasil input()",
+      "text": "Karena hasil <code>input()</code> selalu berupa teks, kode seperti <code>angka = input(\"Angka: \") + 10</code> akan error <code>TypeError: can only concatenate str to str</code>. Kamu wajib membungkusnya dengan <code>int()</code> terlebih dahulu!"
+    },
+    "practice": {
+      "instruction": "Jalankan simulasi kasir berikut dan ubah nama camilan serta ucapan terima kasihnya!",
+      "code": "pelanggan = \"Nadia\"\nitem = \"Croissant Cokelat 🥐\"\nprint(\"Struk Pesanan:\")\nprint(f\"Nama: {pelanggan}\")\nprint(f\"Item: {item}\")\nprint(\"Terima kasih sudah mampir! Pipi tunggu kedatangannya lagi 💖\")"
+    },
+    "quizzes": [
+      {
+        "id": "io-q1",
+        "question": "Jika pengguna mengetik angka 25 pada input(), apa tipe data yang diterima Python?",
+        "options": [
+          "int",
+          "str",
+          "float"
+        ],
+        "answer": 1,
+        "explanation": "Fungsi input() selalu menghasilkan string (str) terlepas dari karakter apa yang diketik."
+      },
+      {
+        "id": "io-q2",
+        "question": "Bagaimana cara meminta input umur sekaligus mengubahnya menjadi angka bulat?",
+        "options": [
+          "umur = int(input(\"Umurmu: \"))",
+          "umur = input(int(\"Umurmu: \"))",
+          "umur = to_integer(input(\"Umurmu: \"))"
+        ],
+        "answer": 0,
+        "explanation": "Bungkus pemanggilan input() di dalam fungsi int() agar langsung dikonversi ke bilangan bulat."
+      },
+      {
+        "id": "io-q3",
+        "question": "Apa fungsi parameter end=\"\" pada print(\"Hai\", end=\" \")?",
+        "options": [
+          "Menghentikan program seketika",
+          "Menentukan karakter penutup agar tidak langsung ganti baris baru",
+          "Menghapus teks sebelumnya"
+        ],
+        "answer": 1,
+        "explanation": "Secara default print mencetak baris baru (\\n). Mengubah parameter end membuat teks berikutnya tetap berada di baris yang sama."
+      }
+    ],
+    "takeaways": [
+      "Gunakan <code>input()</code> untuk menerima masukan dari pengguna.",
+      "Hasil <code>input()</code> selalu bertipe data string (<code>str</code>).",
+      "Gunakan <code>print()</code> untuk menampilkan respon hasil olahan komputermu."
+    ]
+  },
+  {
+    "slug": "operator",
+    "title": "Operator & Hitung-hitungan",
+    "level": 2,
+    "levelName": "Dasar-dasar",
+    "duration": 8,
+    "difficulty": "Gampang",
+    "description": "Menghitung belanjaan dan mengecek syarat logika dengan operator matematika dan perbandingan.",
+    "icon": "fa-calculator",
+    "pipiTip": "Beda antara / dan //: kalau / hasilnya selalu berkoma (float), tapi // membulatkan ke bawah jadi bilangan bulat!",
+    "funFact": "Di Python, tanda pangkat tidak memakai topi (^), melainkan bintang ganda (**). Misalnya 2 ** 3 hasilnya 8!",
+    "analogy": {
+      "title": "Kalkulator belanja dan kasir yang adil",
+      "paragraphs": [
+        "Saat kamu patungan beli seloyang pizza bersama 3 sahabatmu, kamu perlu menghitung: berapa total harga, dibagi 4 dapat berapa potong per orang, dan apakah ada sisa potongan di kotak?",
+        "Operator di Python bekerja persis seperti asisten keuanganmu: ada yang jago berhitung (aritmatika), jago membandingkan harga (perbandingan), dan jago memutuskan syarat (logika)."
+      ]
+    },
+    "concept": {
+      "title": "Tiga Kelompok Operator Penting",
+      "lead": "Kuasai simbol-simbol ini untuk membuat perhitungan dan syarat cerdas di kodemu.",
+      "points": [
+        "<strong>Aritmatika:</strong> <code>+</code> (tambah), <code>-</code> (kurang), <code>*</code> (kali), <code>/</code> (bagi pecahan), <code>//</code> (bagi bulat), <code>%</code> (sisa bagi/modulo), <code>**</code> (pangkat).",
+        "<strong>Perbandingan:</strong> <code>==</code> (sama dengan), <code>!=</code> (tidak sama), <code>&gt;</code> (lebih besar), <code>&lt;</code> (lebih kecil), <code>&gt;=</code>, <code>&lt;=</code>. Hasilnya selalu <code>True</code> atau <code>False</code>.",
+        "<strong>Logika:</strong> <code>and</code> (keduanya wajib benar), <code>or</code> (salah satu cukup benar), <code>not</code> (membalikkan nilai kebenaran)."
+      ]
+    },
+    "codeExample": {
+      "filename": "patungan_jajan.py",
+      "code": "# Menghitung patungan jajan mochi\ntotal_tagihan = 45000\njumlah_teman = 4\n\nbiaya_per_orang = total_tagihan / jumlah_teman\npembagian_bulat = total_tagihan // jumlah_teman\nsisa_uang = total_tagihan % jumlah_teman\n\n# Memeriksa syarat dengan operator perbandingan & logika\nuang_di_dompet = 15000\ncukup_uang = uang_di_dompet >= biaya_per_orang\nbawa_e_wallet = True\nbisa_bayar = cukup_uang or bawa_e_wallet\n\nprint(f\"Biaya persis per orang: Rp{biaya_per_orang}\")\nprint(f\"Sisa pembagian kasir: Rp{sisa_uang}\")\nprint(f\"Apakah kamu bisa bayar jajan? {bisa_bayar} ✨\")",
+      "highlight": [
+        5,
+        6,
+        7,
+        12,
+        14
+      ],
+      "explanations": [
+        "Baris 5: <code>/</code> menghasilkan <code>11250.0</code> (float).",
+        "Baris 6: <code>//</code> membuang pecahan dan mengambil bagian bulatnya.",
+        "Baris 7: <code>%</code> (modulo) mengembalikan sisa pembagian.",
+        "Baris 12: <code>&gt;=</code> membandingkan apakah 15000 lebih besar atau sama dengan 11250 (True).",
+        "Baris 14: operator <code>or</code> bernilai True karena salah satu syarat terpenuhi."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Beda Antara = dan ==",
+      "text": "Satu tanda sama dengan (<code>=</code>) digunakan untuk MENYIMPAN nilai ke variabel (penugasan). Dua tanda sama dengan (<code>==</code>) digunakan untuk MEMBANDINGKAN apakah dua nilai itu sama persis. Jangan tertukar ya!"
+    },
+    "practice": {
+      "instruction": "Hitung apakah sisa saldo setelah membeli boba cukup untuk ongkos pulang naik ojol!",
+      "code": "saldo = 50000\nharga_boba = 24000\nongkos_ojol = 18000\n\nsisa_saldo = saldo - harga_boba\ncukup_pulang = sisa_saldo >= ongkos_ojol\nprint(f\"Sisa saldo: Rp{sisa_saldo}\")\nprint(f\"Cukup untuk ongkos pulang? {cukup_pulang} 🛵\")"
+    },
+    "quizzes": [
+      {
+        "id": "op-q1",
+        "question": "Berapakah hasil dari operasi 14 % 4 di Python?",
+        "options": [
+          "3",
+          "2",
+          "3.5"
+        ],
+        "answer": 1,
+        "explanation": "14 dibagi 4 menghasilkan 3 dengan sisa 2. Modulo (%) mengembalikan angka sisanya, yaitu 2."
+      },
+      {
+        "id": "op-q2",
+        "question": "Operator apa yang digunakan untuk menghitung 3 pangkat 4?",
+        "options": [
+          "3 ^ 4",
+          "3 ** 4",
+          "3 // 4"
+        ],
+        "answer": 1,
+        "explanation": "Di Python, operasi eksponen atau pangkat menggunakan operator bintang ganda (**)."
+      },
+      {
+        "id": "op-q3",
+        "question": "Jika lapar = True dan punya_uang = False, apa hasil dari (lapar and punya_uang)?",
+        "options": [
+          "True",
+          "False",
+          "None"
+        ],
+        "answer": 1,
+        "explanation": "Operator \"and\" hanya akan menghasilkan True jika KEDUA belah pihak bernilai True."
+      }
+    ],
+    "takeaways": [
+      "Gunakan <code>//</code> untuk pembagian bulat dan <code>%</code> untuk sisa bagi.",
+      "Gunakan <code>==</code> untuk memeriksa kesamaan nilai, bukan <code>=</code>.",
+      "Operator logika (<code>and</code>, <code>or</code>, <code>not</code>) menggabungkan syarat keputusan."
+    ]
+  },
+  {
+    "slug": "f-string-konversi",
+    "title": "F-String & Konversi Tipe Data",
+    "level": 2,
+    "levelName": "Dasar-dasar",
+    "duration": 8,
+    "difficulty": "Gampang",
+    "description": "Menyusun kalimat estetik dengan f-string dan menyulap tipe data sesuai kebutuhan program.",
+    "icon": "fa-wand-magic",
+    "pipiTip": "Cukup tambahkan huruf f kecil di depan tanda kutip pembuka: f\"Halo {nama}!\". Praktis dan cantik!",
+    "funFact": "F-string (Formatted String Literals) diperkenalkan di Python 3.6 dan kini jadi cara format teks terfavorit di dunia Python!",
+    "analogy": {
+      "title": "Kamera polaroid dengan bingkai custom",
+      "paragraphs": [
+        "Sebelum ada f-string, menggabungkan kata di Python rasanya seperti menempel potongan huruf koran pakai lem: <code>\"Halo \" + nama + \", umurmu \" + str(umur)</code>. Melelahkan dan rawan salah spasi!",
+        "F-string itu seperti foto polaroid dengan jendela transparan: kamu tinggal membuat template kalimat yang rapi, lalu meletakkan nama variabel di dalam kurung kurawal <code>{...}</code>. Python otomatis mengisinya!"
+      ]
+    },
+    "concept": {
+      "title": "Menyulap Tipe Data & Merapikan Angka",
+      "lead": "Dua keahlian penting untuk membuat output aplikasi terlihat profesional dan ramah dibaca.",
+      "points": [
+        "<strong>Casting / Konversi Tipe:</strong> <code>int(\"25\")</code> menjadi angka bulat, <code>float(\"15.7\")</code> menjadi desimal, <code>str(100)</code> menjadi teks.",
+        "<strong>Ekspresi di dalam f-string:</strong> Kamu bisa langsung berhitung di dalam kurung kurawal, misalnya <code>{harga * 2}</code>.",
+        "<strong>Format Angka Ribuan:</strong> Tulis <code>{total:,}</code> untuk otomatis memunculkan pemisah ribuan (misal 50,000).",
+        "<strong>Format Desimal:</strong> Tulis <code>{nilai:.2f}</code> untuk membatasi 2 angka di belakang koma."
+      ]
+    },
+    "codeExample": {
+      "filename": "struk_cantik.py",
+      "code": "# Mengubah teks input menjadi angka matematika\ninput_jumlah = \"4\"\ninput_harga = \"12500\"\n\n# Konversi tipe data (casting)\njumlah = int(input_jumlah)\nharga = float(input_harga)\ntotal = jumlah * harga\npajak = total * 0.11\ntotal_akhir = total + pajak\n\n# Menampilkan struk belanja yang estetik\nprint(f\"Jumlah item : {jumlah} porsi\")\nprint(f\"Subtotal    : Rp{total:,.2f}\")\nprint(f\"PPN (11%)   : Rp{pajak:,.2f}\")\nprint(f\"Total Bayar : Rp{total_akhir:,.2f} 🧾\")",
+      "highlight": [
+        5,
+        6,
+        13,
+        14,
+        15
+      ],
+      "explanations": [
+        "Baris 5-6: mengubah string hasil ketikan menjadi <code>int</code> dan <code>float</code>.",
+        "Baris 13: <code>{total:,.2f}</code> menampilkan pemisah koma ribuan dan dua digit desimal.",
+        "Semua variabel disisipkan ke dalam kalimat tanpa tanda plus <code>+</code> yang berantakan."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Mengonversi Teks Non-Angka",
+      "text": "Fungsi <code>int()</code> hanya bisa mengubah teks yang memang berisi angka murni. Jika kamu mencoba <code>int(\"sepuluh\")</code> atau <code>int(\"12.5\")</code>, Python akan memicu <code>ValueError</code>. Pastikan format teksnya valid sebelum dikonversi!"
+    },
+    "practice": {
+      "instruction": "Buatlah ucapan ulang tahun dengan menghitung umur tahun depan menggunakan f-string!",
+      "code": "nama = \"Gia\"\numur_sekarang = 17\nprint(f\"Selamat bertambah usia, {nama}!\")\nprint(f\"Tahun depan kamu bakal genap berusia {umur_sekarang + 1} tahun! 🎂✨\")"
+    },
+    "quizzes": [
+      {
+        "id": "fstr-q1",
+        "question": "Bagaimana sintaks f-string yang benar di Python?",
+        "options": [
+          "format(\"Halo {nama}\")",
+          "f\"Halo {nama}\"",
+          "string(Halo {nama})"
+        ],
+        "answer": 1,
+        "explanation": "F-string ditandai dengan huruf f tepat sebelum tanda kutip pembuka string."
+      },
+      {
+        "id": "fstr-q2",
+        "question": "Apa fungsi format :.2f di dalam kurung kurawal f-string?",
+        "options": [
+          "Mengubah teks menjadi huruf kapital",
+          "Menampilkan angka dengan 2 angka di belakang koma desimal",
+          "Membagi angka dengan 2"
+        ],
+        "answer": 1,
+        "explanation": "Format :.2f menentukan presisi floating point menjadi tepat 2 angka desimal."
+      },
+      {
+        "id": "fstr-q3",
+        "question": "Apa tipe data hasil dari operasi str(4500)?",
+        "options": [
+          "int",
+          "float",
+          "str"
+        ],
+        "answer": 2,
+        "explanation": "Fungsi str() mengonversi nilai apapun menjadi tipe data string (teks)."
+      }
+    ],
+    "takeaways": [
+      "Gunakan f-string untuk menyusun teks dan variabel secara ringkas dan bersih.",
+      "Gunakan <code>int()</code>, <code>float()</code>, dan <code>str()</code> untuk mengubah tipe data.",
+      "Gunakan format <code>:,</code> untuk pemisah ribuan dan <code>:.2f</code> untuk desimal."
+    ]
+  },
+  {
+    "slug": "percabangan",
+    "title": "Percabangan if, elif, dan else",
+    "level": 3,
+    "levelName": "Alur program",
+    "duration": 8,
+    "difficulty": "Gampang",
+    "description": "Mengajarkan program mengambil keputusan bijak seperti memilih outfit sesuai cuaca.",
+    "icon": "fa-code-branch",
+    "pipiTip": "Indentasi (spasi menjorok ke dalam) di Python itu hukumnya wajib, persis seperti tata krama!",
+    "funFact": "Python menggunakan 4 spasi sebagai standar indentasi resmi PEP 8, bukan tombol tab acak.",
+    "analogy": {
+      "title": "Memilih minuman di kafe sesuai cuaca",
+      "paragraphs": [
+        "Bayangkan kamu berdiri di depan pintu kafe. Kalau di luar hujan deras (if), kamu pesan cokelat panas. Tapi kalau cuacanya panas terik (elif), kamu pesan es matcha boba. Kalau cuacanya mendung biasa (else), kamu pesan air mineral saja.",
+        "Itulah percabangan! Komputer mengevaluasi kondisi satu per satu dari atas ke bawah, dan hanya menjalankan blok kode yang syaratnya terpenuhi."
+      ]
+    },
+    "concept": {
+      "title": "Struktur Logika Pengambilan Keputusan",
+      "lead": "Bagaimana Python membaca dan memilih jalan instruksi.",
+      "points": [
+        "<strong>if kondisi:</strong> Syarat utama yang pertama kali dicek. Wajib diakhiri tanda titik dua (<code>:</code>).",
+        "<strong>elif kondisi:</strong> Singkatan dari \"else if\", dipakai jika syarat sebelumnya salah tapi kamu punya syarat alternatif lain.",
+        "<strong>else:</strong> Penampung terakhir jika SEMUA syarat di atas tidak ada yang cocok.",
+        "<strong>Indentasi:</strong> Baris di bawah titik dua harus menjorok 4 spasi untuk menandai bahwa ia adalah bagian dari blok keputusan tersebut."
+      ]
+    },
+    "codeExample": {
+      "filename": "pilih_outfit.py",
+      "code": "cuaca = \"hujan\"\nsuhu_derajat = 21\n\nif cuaca == \"hujan\" and suhu_derajat < 24:\n    outfit = \"Sweater rajut lilac + payung transparan 🌂\"\nelif cuaca == \"panas\":\n    outfit = \"Kaos katun adem + topi bucket 👒\"\nelse:\n    outfit = \"Cardigan santai 🌸\"\n\nprint(f\"Rekomendasi Pipi hari ini: {outfit}\")",
+      "highlight": [
+        4,
+        6,
+        8
+      ],
+      "explanations": [
+        "Baris 4: mengecek dua syarat sekaligus menggunakan operator <code>and</code>.",
+        "Karena kondisi baris 4 benar (True), Python menjalankan baris 5 dan langsung melompati baris 6-9.",
+        "Perhatikan spasi di baris 5, 7, dan 9: itu adalah indentasi blok kode."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Lupa Titik Dua (:) & Indentasi Tabur",
+      "text": "Kesalahan paling sering pemula adalah lupa mengetik titik dua <code>:</code> di ujung baris <code>if</code>, atau mencampur spasi dan tombol Tab. Gunakan selalu 4 spasi murni ya!"
+    },
+    "practice": {
+      "instruction": "Ubah nilai nilai_ujian di bawah dan periksa grade yang diberikan Pipi!",
+      "code": "nilai_ujian = 88\n\nif nilai_ujian >= 90:\n    grade = \"A+ (Luar biasa pintarnya! ⭐)\"\nelif nilai_ujian >= 75:\n    grade = \"B (Keren banget, pertahankan! 💖)\"\nelse:\n    grade = \"C (Tetap semangat, Pipi temani belajar lagi! 🍵)\"\n\nprint(f\"Hasil belajarmu: {grade}\")"
+    },
+    "quizzes": [
+      {
+        "id": "cabang-q1",
+        "question": "Tanda baca apa yang wajib ada di akhir baris pernyataan if di Python?",
+        "options": [
+          "Titik koma (;)",
+          "Titik dua (:)",
+          "Kurung kurawal ({})"
+        ],
+        "answer": 1,
+        "explanation": "Di Python, setiap pembuka blok kode seperti if, elif, else wajib diakhiri tanda titik dua (:)."
+      },
+      {
+        "id": "cabang-q2",
+        "question": "Berapa jumlah spasi standar untuk indentasi blok kode di Python menurut PEP 8?",
+        "options": [
+          "2 spasi",
+          "4 spasi",
+          "8 spasi"
+        ],
+        "answer": 1,
+        "explanation": "Standar resmi Python PEP 8 merekomendasikan tepat 4 spasi untuk setiap level indentasi."
+      },
+      {
+        "id": "cabang-q3",
+        "question": "Kapan blok di dalam \"else:\" akan dieksekusi?",
+        "options": [
+          "Selalu dieksekusi setiap saat",
+          "Hanya jika semua kondisi if dan elif sebelumnya bernilai False",
+          "Hanya jika kondisi if bernilai True"
+        ],
+        "answer": 1,
+        "explanation": "Blok else adalah jalan keluar cadangan yang hanya dijalankan ketika tidak ada satupun syarat if/elif yang terpenuhi."
+      }
+    ],
+    "takeaways": [
+      "Gunakan <code>if</code>, <code>elif</code>, dan <code>else</code> untuk alur logika keputusan.",
+      "Selalu beri tanda titik dua <code>:</code> di akhir baris syarat.",
+      "Gunakan indentasi 4 spasi konsisten untuk menandai isi blok instruksi."
+    ]
+  },
+  {
+    "slug": "perulangan",
+    "title": "Perulangan for dan while",
+    "level": 3,
+    "levelName": "Alur program",
+    "duration": 9,
+    "difficulty": "Gampang",
+    "description": "Menyerahkan tugas membosankan yang berulang ke komputer tanpa rasa lelah.",
+    "icon": "fa-rotate",
+    "pipiTip": "Loop itu kayak memutar lagu favorit di playlist: kamu tahu kapan lagu dimulai dan kapan selesai!",
+    "funFact": "Perulangan while yang lupa diberi kondisi berhenti disebut \"infinite loop\" alias loop abadi!",
+    "analogy": {
+      "title": "Menyuap sereal dan memutar playlist lagu",
+      "paragraphs": [
+        "Ada dua jenis perulangan dalam hidup: pertama, saat kamu memutar 5 lagu favorit di album K-pop (kamu tahu persis jumlah lagunya ada 5) — ini seperti <code>for loop</code>.",
+        "Kedua, saat kamu menyuap semangkuk sereal: kamu terus menyuap <em>selama</em> mangkuk masih ada isinya. Begitu mangkuk kosong, kamu berhenti — ini persis seperti <code>while loop</code>!"
+      ]
+    },
+    "concept": {
+      "title": "Dua Gaya Perulangan di Python",
+      "lead": "Pilih perulangan yang paling cocok dengan situasimu.",
+      "points": [
+        "<strong>for item in koleksi:</strong> Dipakai saat kamu ingin mengulang setiap anggota dari suatu daftar atau urutan tertentu.",
+        "<strong>while kondisi:</strong> Dipakai saat kamu ingin terus mengulang instruksi <em>selama</em> suatu kondisi masih bernilai <code>True</code>.",
+        "<strong>Variabel Counter:</strong> Pada while loop, pastikan ada nilai yang bertambah agar kondisi akhirnya bisa menjadi <code>False</code>."
+      ]
+    },
+    "codeExample": {
+      "filename": "putar_lagu.py",
+      "code": "# Contoh 1: for loop menjelajahi playlist\nplaylist = [\"Ditto 🎧\", \"Cupid 💘\", \"Super Shy ✨\"]\nprint(\"Daftar putar lagu favorit:\")\nfor nomor, lagu in enumerate(playlist, start=1):\n    print(f\"{nomor}. Memutar {lagu}\")\n\n# Contoh 2: while loop menyendok boba\nsisa_boba = 3\nprint(\"\\nMenikmati minuman boba:\")\nwhile sisa_boba > 0:\n    print(f\"Slurrp! Masih ada {sisa_boba} butir boba 🧋\")\n    sisa_boba -= 1  # kurangi 1 setiap sedotan\n\nprint(\"Habis! Segar banget~\")",
+      "highlight": [
+        4,
+        5,
+        11,
+        13
+      ],
+      "explanations": [
+        "<code>for nomor, lagu in enumerate(playlist, start=1)</code>: memudahkan kita mendapat nomor urut dan nama lagunya sekaligus.",
+        "Baris 11: <code>while sisa_boba &gt; 0</code> memeriksa apakah sisa boba masih lebih dari 0.",
+        "Baris 13: <code>sisa_boba -= 1</code> sangat krusial agar loop tidak berjalan selamanya."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Infinite Loop (Perulangan Abadi)",
+      "text": "Jika kamu menulis <code>while sisa_boba &gt; 0:</code> tapi lupa mengurangi nilainya (<code>sisa_boba -= 1</code>), nilainya akan selalu 3 dan programmu akan berputar terus tanpa henti sampai komputer terasa panas! Tekan <code>Ctrl + C</code> di terminal untuk menghentikannya."
+    },
+    "practice": {
+      "instruction": "Jalankan countdown peluncuran roket Pipi dengan perulangan while!",
+      "code": "hitung_mundur = 5\nwhile hitung_mundur > 0:\n    print(f\"{hitung_mundur}...\")\n    hitung_mundur -= 1\nprint(\"Meluncur ke luar angkasa! 🚀✨\")"
+    },
+    "quizzes": [
+      {
+        "id": "loop-q1",
+        "question": "Kapan sebaiknya kita memilih \"for loop\" daripada \"while loop\"?",
+        "options": [
+          "Saat kita ingin loop berjalan selamanya",
+          "Saat kita sudah tahu pasti data atau jumlah perulangan yang ingin dijalani",
+          "Hanya saat program error"
+        ],
+        "answer": 1,
+        "explanation": "For loop sangat ideal jika kita memiliki urutan data tertentu (seperti list atau range angka)."
+      },
+      {
+        "id": "loop-q2",
+        "question": "Apa akibat jika kondisi pada while loop tidak pernah bernilai False?",
+        "options": [
+          "Program otomatis menghapus dirinya sendiri",
+          "Terjadi infinite loop yang tidak pernah berhenti",
+          "Laptop langsung restart"
+        ],
+        "answer": 1,
+        "explanation": "Tanpa kondisi yang berubah menjadi False, while loop akan berputar selamanya (infinite loop)."
+      },
+      {
+        "id": "loop-q3",
+        "question": "Apa arti dari perintah sisa -= 1?",
+        "options": [
+          "Sama dengan sisa = sisa - 1",
+          "Membuat nilai sisa jadi minus 1",
+          "Menghapus variabel sisa"
+        ],
+        "answer": 0,
+        "explanation": "Operator penugasan -= 1 adalah cara singkat untuk mengurangi nilai variabel sebanyak 1."
+      }
+    ],
+    "takeaways": [
+      "Gunakan <code>for</code> untuk mengulang elemen dalam daftar/koleksi.",
+      "Gunakan <code>while</code> saat ingin mengulang berdasarkan kondisi logika.",
+      "Jangan lupa perbarui variabel kontrol di while loop agar terhindar dari infinite loop."
+    ]
+  },
+  {
+    "slug": "range-kontrol-loop",
+    "title": "range, break, continue, & pass",
+    "level": 3,
+    "levelName": "Alur program",
+    "duration": 8,
+    "difficulty": "Lumayan",
+    "description": "Mengendalikan putaran loop dengan presisi: melompat, berhenti darurat, atau menitip tempat.",
+    "icon": "fa-forward-step",
+    "pipiTip": "Ingat rumus range(stop): angka akhirnya selalu eksklusif (tidak diikutsertakan)! Jadi range(5) cuma sampai 4.",
+    "funFact": "Kata kunci \"pass\" sering dipakai programmer saat merancang kerangka kode yang belum sempat ditulis isinya!",
+    "analogy": {
+      "title": "Tombol kendali remote pemutar musik",
+      "paragraphs": [
+        "Saat mendengarkan lagu, kadang ada lagu yang ingin kamu lewati (tombol Next / <code>continue</code>). Kadang ada telepon darurat masuk sehingga kamu langsung menghentikan lagu seketika (tombol Stop / <code>break</code>).",
+        "Lalu bagaimana dengan <code>pass</code>? Bayangkan kamu menempel stiker memo kosong \"nanti diisi\": tempatnya sudah disiapkan, tapi belum ada isinya supaya Python tidak marah saat memeriksa syntax."
+      ]
+    },
+    "concept": {
+      "title": "Peralatan Kendali Perulangan",
+      "lead": "Empat alat kendali yang membuat kodemu jauh lebih lincah.",
+      "points": [
+        "<strong>range(start, stop, step):</strong> Menghasilkan deret angka. Ingat, angka <code>stop</code> tidak diikutkan!",
+        "<strong>break:</strong> Menghentikan perulangan saat itu juga dan langsung keluar dari loop.",
+        "<strong>continue:</strong> Mengabaikan sisa baris di iterasi saat ini dan langsung melompat ke iterasi berikutnya.",
+        "<strong>pass:</strong> Pernyataan hampa (placeholder) agar blok kode kosong tidak menyebabkan SyntaxError."
+      ]
+    },
+    "codeExample": {
+      "filename": "kendali_lagu.py",
+      "code": "# Contoh kombinasi range, continue, dan break\nprint(\"Memindai 6 lagu di radio:\")\n\nfor i in range(1, 7):  # angka 1 sampai 6\n    if i == 3:\n        print(f\"Lagu ke-{i} kena copyright, lewati! (continue) ⏩\")\n        continue  # lompat langsung ke lagu berikutnya\n    \n    if i == 5:\n        print(f\"Baterai habis di lagu ke-{i}! Hentikan! (break) 🛑\")\n        break     # berhenti total keluar dari loop\n        \n    print(f\"Sedang memutar lagu ke-{i} 🎵\")",
+      "highlight": [
+        4,
+        6,
+        8,
+        10,
+        12
+      ],
+      "explanations": [
+        "<code>range(1, 7)</code> menghasilkan angka: 1, 2, 3, 4, 5, 6.",
+        "Saat <code>i == 3</code>, perintah <code>continue</code> membuat print baris 14 tidak dijalankan untuk lagu ke-3.",
+        "Saat <code>i == 5</code>, perintah <code>break</code> langsung memutus loop sehingga lagu ke-6 tidak pernah diperiksa."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Mengira range(1, 5) Menghasilkan Angka 5",
+      "text": "Batas akhir pada <code>range(awal, akhir)</code> selalu berhenti satu langkah sebelum angka akhir. <code>range(1, 5)</code> hanya menghasilkan angka <code>1, 2, 3, 4</code>. Jika ingin angka 5 ikut serta, tuliskan <code>range(1, 6)</code>!"
+    },
+    "practice": {
+      "instruction": "Cetak angka genap dari 2 sampai 10 menggunakan range dengan langkah (step) 2!",
+      "code": "print(\"Deret angka genap lucu:\")\nfor angka in range(2, 11, 2):\n    print(f\"Angka: {angka} 🌸\")"
+    },
+    "quizzes": [
+      {
+        "id": "range-q1",
+        "question": "Berapa banyak angka yang dihasilkan oleh ekspresi range(4)?",
+        "options": [
+          "3 angka (1, 2, 3)",
+          "4 angka (0, 1, 2, 3)",
+          "5 angka (0, 1, 2, 3, 4)"
+        ],
+        "answer": 1,
+        "explanation": "range(4) menghasilkan 4 nilai dimulai dari 0: yaitu 0, 1, 2, dan 3."
+      },
+      {
+        "id": "range-q2",
+        "question": "Apa yang terjadi ketika interpreter Python menemui perintah break di dalam loop?",
+        "options": [
+          "Program berhenti dan keluar dari perulangan seketika",
+          "Loop melompat ke putaran berikutnya",
+          "Loop mengulang dari awal"
+        ],
+        "answer": 0,
+        "explanation": "Perintah break langsung menghentikan eksekusi perulangan dan melanjutkan ke kode di luar loop."
+      },
+      {
+        "id": "range-q3",
+        "question": "Kapan kata kunci \"pass\" sangat berguna digunakan?",
+        "options": [
+          "Untuk mencetak password ke layar",
+          "Sebagai placeholder sementara pada fungsi atau blok yang belum ditulis isinya",
+          "Untuk mempercepat jalannya program"
+        ],
+        "answer": 1,
+        "explanation": "pass adalah instruksi kosong (no-op) agar Python tidak error saat kita belum mengisi badan fungsi/loop."
+      }
+    ],
+    "takeaways": [
+      "<code>range(start, stop, step)</code> memiliki batas akhir yang eksklusif (tidak diikutkan).",
+      "Gunakan <code>break</code> untuk berhenti seketika, dan <code>continue</code> untuk melompati satu putaran.",
+      "Gunakan <code>pass</code> sebagai penanda tempat sementara di blok kode kosong."
+    ]
+  },
+  {
+    "slug": "nested-loop-pola",
+    "title": "Nested Loop & Pola Logika",
+    "level": 3,
+    "levelName": "Alur program",
+    "duration": 9,
+    "difficulty": "Lumayan",
+    "description": "Menyusun perulangan di dalam perulangan untuk mencetak bentuk bintang dan tabel cantik.",
+    "icon": "fa-cubes-stacked",
+    "pipiTip": "Pikirkan nested loop kayak jam dinding: jarum menit harus berputar 60 kali dulu baru jarum jam bergeser 1 kali!",
+    "funFact": "Nested loop sering dipakai dalam pembuatan game 2D untuk membaca koordinat peta baris (Y) dan kolom (X)!",
+    "analogy": {
+      "title": "Kotak cokelat praline bertingkat",
+      "paragraphs": [
+        "Bayangkan kamu punya kotak hadiah berisi cokelat praline. Kotak itu memiliki 3 baris (lantai), dan di setiap baris terdapat 4 butir cokelat dengan aneka rasa.",
+        "Untuk memakan semua cokelat dengan tertib, kamu mulai dari Baris 1: ambil cokelat ke-1, ke-2, ke-3, ke-4. Baru setelah itu kamu pindah ke Baris 2. Inilah konsep <strong>nested loop</strong> (loop luar mengatur baris, loop dalam mengatur kolom)!"
+      ]
+    },
+    "concept": {
+      "title": "Loop Luar vs Loop Dalam",
+      "lead": "Bagaimana perulangan bersarang berinteraksi satu sama lain.",
+      "points": [
+        "<strong>Outer Loop (Loop Luar):</strong> Berjalan lambat, menentukan perpindahan baris.",
+        "<strong>Inner Loop (Loop Dalam):</strong> Berjalan cepat sampai tuntas untuk setiap SATU kali putaran loop luar.",
+        "<strong>Pola Visual:</strong> Sangat melatih insting logika programmer untuk memanipulasi koordinat dua dimensi.",
+        "<strong>print(..., end=\"\"):</strong> Jangan lupa gunakan parameter end kosong agar karakter dicetak menyamping dalam satu baris."
+      ]
+    },
+    "codeExample": {
+      "filename": "pola_bintang.py",
+      "code": "# Mencetak segitiga bintang kawaii\ntinggi = 4\n\nprint(\"Piramida Bintang Cantik:\")\nfor baris in range(1, tinggi + 1):\n    # Cetak bintang sebanyak nomor baris saat ini\n    for kolom in range(baris):\n        print(\"⭐\", end=\" \")\n    print()  # ganti baris baru setelah loop kolom selesai",
+      "highlight": [
+        5,
+        7,
+        8,
+        9
+      ],
+      "explanations": [
+        "Baris 5: loop luar mengatur baris ke-1 sampai ke-4.",
+        "Baris 7: loop dalam berjalan sebanyak nilai <code>baris</code> saat itu.",
+        "Baris 8: <code>end=\" \"</code> mencetak bintang berdampingan tanpa pindah baris.",
+        "Baris 9: <code>print()</code> kosong dipanggil untuk membuat baris baru setelah semua bintang di baris itu tercetak."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Lupa print() untuk Ganti Baris",
+      "text": "Jika kamu lupa menulis <code>print()</code> di akhir loop luar, semua bintang dari semua baris akan tercetak memanjang ke samping seperti satu garis panjang tak berujung!"
+    },
+    "practice": {
+      "instruction": "Cetak tabel perkalian mini (1 sampai 3) menggunakan nested loop!",
+      "code": "for i in range(1, 4):\n    for j in range(1, 4):\n        print(f\"{i}x{j}={i*j}\", end=\"\\t\")\n    print()"
+    },
+    "quizzes": [
+      {
+        "id": "nested-q1",
+        "question": "Jika loop luar berputar 3 kali dan loop dalam berputar 4 kali, berapa kali isi loop dalam dieksekusi?",
+        "options": [
+          "7 kali",
+          "12 kali",
+          "4 kali"
+        ],
+        "answer": 1,
+        "explanation": "Total perulangan adalah perkalian keduanya: 3 x 4 = 12 kali."
+      },
+      {
+        "id": "nested-q2",
+        "question": "Bagaimana cara mencetak karakter tanpa otomatis berganti baris baru di Python?",
+        "options": [
+          "print(\"teks\", newline=False)",
+          "print(\"teks\", end=\"\")",
+          "print_inline(\"teks\")"
+        ],
+        "answer": 1,
+        "explanation": "Parameter end=\"\" menimpa karakter bawaan baris baru (\\n) menjadi teks kosong."
+      },
+      {
+        "id": "nested-q3",
+        "question": "Dalam analogi jam dinding, manakah yang bertindak sebagai inner loop (loop dalam)?",
+        "options": [
+          "Jarum jam",
+          "Jarum menit",
+          "Baterai jam"
+        ],
+        "answer": 1,
+        "explanation": "Jarum menit berputar penuh berkali-kali sebelum jarum jam bergeser 1 kali, persis perilaku inner loop."
+      }
+    ],
+    "takeaways": [
+      "Nested loop adalah perulangan yang diletakkan di dalam perulangan lain.",
+      "Loop luar mengatur baris horizontal, loop dalam mengatur item kolom.",
+      "Gunakan <code>print(end=\"\")</code> dan <code>print()</code> kosong untuk mengatur tata letak."
+    ]
+  },
+  {
+    "slug": "string",
+    "title": "Mengolah Teks dengan String",
+    "level": 4,
+    "levelName": "Struktur data",
+    "duration": 8,
+    "difficulty": "Gampang",
+    "description": "Memotong, merapikan, dan menyulap tulisan teks dengan jurus-jurus string method bawaan.",
+    "icon": "fa-font",
+    "pipiTip": "Indeks di Python selalu dimulai dari angka 0! Karakter pertama ada di posisi 0, bukan 1.",
+    "funFact": "String di Python bersifat \"immutable\", artinya teks aslinya tidak bisa diubah langsung, melainkan menghasilkan teks baru yang diperbarui!",
+    "analogy": {
+      "title": "Koleksi gelang manik-manik berhuruf",
+      "paragraphs": [
+        "Bayangkan kamu punya gelang manik-manik bertuliskan \"P-I-P-I\". Setiap butir manik punya nomor urut: manik pertama nomor 0, manik kedua nomor 1, dan seterusnya.",
+        "Kamu bisa memilih memotong mengambil 2 butir saja, mengganti manik yang kotor jadi berkilau, atau membersihkan debu di ujung tali. Di Python, semua sulap teks ini sudah disediakan lewat <em>string method</em>!"
+      ]
+    },
+    "concept": {
+      "title": "Metode Ajaib Pengolah Teks",
+      "lead": "Fungsi-fungsi siap pakai untuk merapikan ketikan teks pengguna.",
+      "points": [
+        "<strong>Indexing:</strong> <code>teks[0]</code> mengambil huruf pertama. <code>teks[-1]</code> mengambil huruf paling akhir.",
+        "<strong>Merapikan Spasi:</strong> <code>teks.strip()</code> menghapus spasi liar di awal dan akhir ketikan.",
+        "<strong>Huruf Besar/Kecil:</strong> <code>.lower()</code>, <code>.upper()</code>, dan <code>.title()</code> untuk kapitalisasi rapi.",
+        "<strong>Pencarian & Penggantian:</strong> <code>.replace(\"lama\", \"baru\")</code> dan <code>\"kata\" in teks</code> untuk cek keberadaan teks."
+      ]
+    },
+    "codeExample": {
+      "filename": "salon_teks.py",
+      "code": "# Teks jajan yang masih berantakan ketikannya\nraw_input = \"   kopi susu gula aren DINGIN   \"\n\n# Merapikan teks dengan method berantai\nbersih = raw_input.strip()            # buang spasi ujung\nrapi = bersih.title()                 # Kopi Susu Gula Aren Dingin\nmenu_baru = rapi.replace(\"Dingin\", \"Hangat ☕\")\n\nprint(f\"Asli : '{raw_input}'\")\nprint(f\"Rapi : '{rapi}'\")\nprint(f\"Ganti: '{menu_baru}'\")\nprint(f\"Huruf pertama: {rapi[0]} | Huruf terakhir: {rapi[-1]}\")",
+      "highlight": [
+        5,
+        6,
+        7,
+        12
+      ],
+      "explanations": [
+        "<code>.strip()</code> menghilangkan spasi tak sengaja yang sering diketik pengguna di keyboard HP.",
+        "<code>.title()</code> membuat setiap awal kata berhuruf kapital estetik.",
+        "<code>.replace(\"Dingin\", \"Hangat ☕\")</code> menukar kata tertentu dengan kata baru.",
+        "<code>rapi[-1]</code> adalah trik manis Python untuk mengambil huruf paling ujung kanan."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Mengira .upper() Mengubah Variabel Asli",
+      "text": "Karena string itu <em>immutable</em>, memanggil <code>nama.upper()</code> sendirian tidak akan mengubah variabel <code>nama</code>. Kamu harus menampung hasilnya kembali: <code>nama = nama.upper()</code>!"
+    },
+    "practice": {
+      "instruction": "Ubah kalimat ini agar huruf awalnya kapital semua dan spasi berlebihnya hilang!",
+      "code": "judul = \"  belajar python bareng pipi si ular imut  \"\njudul_rapi = judul.strip().title()\nprint(f\"Hasil: {judul_rapi} ✨\")"
+    },
+    "quizzes": [
+      {
+        "id": "str-q1",
+        "question": "Berapa indeks untuk mengambil huruf pertama dari sebuah string di Python?",
+        "options": [
+          "1",
+          "0",
+          "-1"
+        ],
+        "answer": 1,
+        "explanation": "Indeks urutan di Python menganut sistem zero-based indexing (dimulai dari angka 0)."
+      },
+      {
+        "id": "str-q2",
+        "question": "Method apa yang digunakan untuk membuang spasi di awal dan akhir teks?",
+        "options": [
+          ".clean()",
+          ".strip()",
+          ".delete_space()"
+        ],
+        "answer": 1,
+        "explanation": "Method .strip() secara khusus menghapus whitespace di sisi kiri dan kanan string."
+      },
+      {
+        "id": "str-q3",
+        "question": "Apa hasil dari ekspresi \"pipi\"[-1]?",
+        "options": [
+          "\"p\"",
+          "\"i\"",
+          "Error karena angka minus"
+        ],
+        "answer": 1,
+        "explanation": "Indeks negatif -1 mengarah pada elemen terakhir string \"pipi\", yaitu huruf \"i\"."
+      }
+    ],
+    "takeaways": [
+      "Indeks string dimulai dari 0 untuk huruf pertama dan -1 untuk huruf terakhir.",
+      "Gunakan <code>.strip()</code>, <code>.lower()</code>, dan <code>.title()</code> untuk merapikan teks.",
+      "String bersifat immutable; method menghasilkan teks baru tanpa mengubah teks aslinya."
+    ]
+  },
+  {
+    "slug": "list-dan-dict",
+    "title": "List dan Dictionary",
+    "level": 4,
+    "levelName": "Struktur data",
+    "duration": 9,
+    "difficulty": "Gampang",
+    "description": "Menata koleksi barang: rak sepatu berurutan (list) dan buku telepon berlabel (dictionary).",
+    "icon": "fa-table-list",
+    "pipiTip": "List pakai kurung siku [ ], sedangkan dictionary pakai kurung kurawal { } dengan pasangan key: value!",
+    "funFact": "Di Python 3.7 ke atas, urutan penyimpanan kunci pada dictionary dijamin tetap terjaga sesuai waktu dimasukkan!",
+    "analogy": {
+      "title": "Kotak pensil warna dan lemari berkas berlabel",
+      "paragraphs": [
+        "<strong>List</strong> itu seperti kotak pensil warna: spidol pink di urutan ke-0, spidol mint di urutan ke-1. Posisinya ditentukan oleh nomor urut angka.",
+        "Sedangkan <strong>Dictionary</strong> itu seperti buku menu kafe atau kartu identitas: kamu mencari data bukan berdasarkan nomor urut, melainkan berdasarkan label namanya (misal mencari <code>\"harga\"</code> atau <code>\"topping\"</code>)."
+      ]
+    },
+    "concept": {
+      "title": "Dua Struktur Data Paling Populer",
+      "lead": "Hampir semua aplikasi di dunia memanfaatkan list dan dictionary untuk menyimpan data pengguna.",
+      "points": [
+        "<strong>List (Daftar Berurutan):</strong> Dibuat dengan <code>[]</code>. Bisa ditambah dengan <code>.append()</code> dan dihapus dengan <code>.remove()</code>.",
+        "<strong>Dictionary (Kamus Key-Value):</strong> Dibuat dengan <code>{}</code> dalam format <code>kunci: nilai</code>.",
+        "<strong>Mengakses Data:</strong> List diakses via angka indeks <code>koleksi[0]</code>, Dict diakses via nama kuncinya <code>koleksi[\"nama\"]</code>."
+      ]
+    },
+    "codeExample": {
+      "filename": "toko_skincare.py",
+      "code": "# List: daftar produk skincare di keranjang\nkeranjang = [\"Sunscreen Spf 50\", \"Lip Balm Peach\", \"Moisturizer\"]\nkeranjang.append(\"Sheet Mask Matcha\")  # tambah item baru\n\n# Dictionary: detail lengkap satu produk\nproduk_favorit = {\n    \"nama\": \"Lip Balm Peach 🍑\",\n    \"harga\": 35000,\n    \"stok\": 12,\n    \"tersedia\": True\n}\n\nprint(f\"Keranjang belanja ({len(keranjang)} item): {keranjang[0]}\")\nprint(f\"Produk unggulan : {produk_favorit['nama']}\")\nprint(f\"Harga normal    : Rp{produk_favorit['harga']}\")",
+      "highlight": [
+        2,
+        3,
+        6,
+        13,
+        14
+      ],
+      "explanations": [
+        "Baris 2: membuat list berisi 3 string item.",
+        "Baris 3: <code>.append()</code> menyisipkan item baru ke antrean paling belakang.",
+        "Baris 6-11: membuat dictionary dengan 4 properti kunci (<code>nama</code>, <code>harga</code>, dll).",
+        "Baris 14: mengakses nilai dictionary menggunakan kurung siku dan nama kuncinya <code>produk_favorit['harga']</code>."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: KeyError & IndexError",
+      "text": "Jika kamu memanggil indeks list yang melebihi jumlah itemnya (misal indeks ke-10 di list isi 3), akan muncul <code>IndexError</code>. Sedangkan jika memanggil kunci dictionary yang tidak terdaftar, akan muncul <code>KeyError</code>. Gunakan <code>dict.get(\"kunci\", default)</code> untuk akses yang lebih aman!"
+    },
+    "practice": {
+      "instruction": "Tambahkan camilan baru ke list dan ubah harga di dictionary berikut!",
+      "code": "jajan = [\"Mochi\", \"Boba\"]\njajan.append(\"Waffle\")\n\nmenu = {\"nama\": \"Waffle Cokelat\", \"harga\": 22000}\nmenu[\"harga\"] = 20000  # beri diskon\n\nprint(f\"Daftar jajan: {jajan}\")\nprint(f\"Harga promo {menu['nama']}: Rp{menu['harga']} ✨\")"
+    },
+    "quizzes": [
+      {
+        "id": "listdict-q1",
+        "question": "Tanda kurung apa yang digunakan untuk membuat sebuah list kosong di Python?",
+        "options": [
+          "( )",
+          "[ ]",
+          "{ }"
+        ],
+        "answer": 1,
+        "explanation": "Kurung siku [ ] adalah sintaks resmi pembuatan list di Python."
+      },
+      {
+        "id": "listdict-q2",
+        "question": "Method apa yang digunakan untuk menyisipkan elemen baru ke urutan paling akhir sebuah list?",
+        "options": [
+          ".insert_last()",
+          ".append()",
+          ".push()"
+        ],
+        "answer": 1,
+        "explanation": "Di Python, method bawaan list untuk menambah elemen di akhir adalah .append()."
+      },
+      {
+        "id": "listdict-q3",
+        "question": "Bagaimana struktur pasangan data di dalam dictionary?",
+        "options": [
+          "index -> value",
+          "key: value",
+          "item = data"
+        ],
+        "answer": 1,
+        "explanation": "Dictionary menyimpan pasangan kunci dan nilai (key: value) yang dipisahkan tanda titik dua."
+      }
+    ],
+    "takeaways": [
+      "Gunakan <code>list</code> untuk kumpulan data yang memiliki urutan teratur.",
+      "Gunakan <code>dict</code> untuk kumpulan data yang memiliki label atribut jelas.",
+      "Akses list dengan nomor urut angka <code>[i]</code> dan dict dengan kunci teks <code>[\"key\"]</code>."
+    ]
+  },
+  {
+    "slug": "tuple-set",
+    "title": "Tuple dan Set",
+    "level": 4,
+    "levelName": "Struktur data",
+    "duration": 8,
+    "difficulty": "Lumayan",
+    "description": "Wadah paten yang anti-berubah (tuple) dan kantong ajaib anti-duplikat (set).",
+    "icon": "fa-layer-group",
+    "pipiTip": "Kalau datanya nggak boleh diubah-ubah sama siapa pun (misal koordinat GPS atau tanggal lahir), simpan di Tuple!",
+    "funFact": "Set otomatis menyaring dan membuang elemen duplikat secepat kilat berkat mekanisme hash table di dalamnya!",
+    "analogy": {
+      "title": "Plakat terukir permanen dan kantong stiker unik",
+      "paragraphs": [
+        "<strong>Tuple</strong> itu seperti plakat medali kejuaraan yang sudah diukir nama dan tanggal: paten, abadi, dan tidak boleh ada yang mencoret-coret nilainya (<em>immutable</em>).",
+        "Sedangkan <strong>Set</strong> itu seperti kolektor stiker pintar: kalau kamu dapat 3 stiker kucing yang gambarnya sama persis, si kolektor cuma menyimpan satu saja di albumnya karena dia anti-duplikat!"
+      ]
+    },
+    "concept": {
+      "title": "Ciri Khas Tuple dan Set",
+      "lead": "Dua wadah spesial dengan kegunaan yang sangat spesifik dan efisien.",
+      "points": [
+        "<strong>Tuple:</strong> Dibuat dengan tanda kurung biasa <code>()</code>. Begitu dibuat, isinya tidak bisa ditambah, dihapus, atau diubah.",
+        "<strong>Set:</strong> Dibuat dengan tanda kurung kurawal <code>{}</code> tanpa pasangan titik dua. Setiap nilainya unik tanpa duplikat.",
+        "<strong>Operasi Himpunan:</strong> Set mendukung irisan (<code>&amp;</code>), gabungan (<code>|</code>), dan selisih (<code>-</code>)."
+      ]
+    },
+    "codeExample": {
+      "filename": "wadah_spesial.py",
+      "code": "# Tuple: ukuran kanvas foto polaroid (lebar, tinggi)\nresolusi_polaroid = (1080, 1920)\n\n# Set: daftar stiker yang dikumpulkan (duplikat otomatis dibuang)\nstiker_koleksi = {\"bintang\", \"hati\", \"kucing\", \"hati\", \"bintang\"}\n\n# Operasi himpunan antar set\nstiker_teman = {\"kucing\", \"pelangi\", \"awan\"}\nstiker_sama = stiker_koleksi & stiker_teman  # irisan\n\nprint(f\"Resolusi tetap: {resolusi_polaroid[0]}x{resolusi_polaroid[1]}\")\nprint(f\"Stiker unikku : {stiker_koleksi}\")\nprint(f\"Stiker kembar kita: {stiker_sama} 💖\")",
+      "highlight": [
+        2,
+        5,
+        9,
+        12
+      ],
+      "explanations": [
+        "Baris 2: <code>resolusi_polaroid</code> adalah tuple yang aman dari perubahan tak sengaja.",
+        "Baris 5: kata <code>\"hati\"</code> dan <code>\"bintang\"</code> ditulis dua kali, tetapi Python otomatis hanya menyimpannya satu kali.",
+        "Baris 9: operator <code>&amp;</code> mencari elemen yang sama-sama dimiliki kedua orang (irisan)."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Tuple Satu Elemen",
+      "text": "Jika kamu ingin membuat tuple dengan 1 anggota saja, kamu wajib memberi koma di belakangnya: <code>satu = (\"mochi\",)</code>. Jika tanpa koma <code>satu = (\"mochi\")</code>, Python menganggapnya string biasa di dalam kurung matematika!"
+    },
+    "practice": {
+      "instruction": "Gunakan set untuk menyaring daftar hobi berikut agar tidak ada yang dobel!",
+      "code": "daftar_hobi = [\"ngoding\", \"baca komik\", \"ngoding\", \"tidur\", \"baca komik\"]\nhobi_unik = set(daftar_hobi)\nprint(f\"Daftar hobi tanpa duplikat: {hobi_unik} 🌸\")"
+    },
+    "quizzes": [
+      {
+        "id": "tupleset-q1",
+        "question": "Manakah sifat utama dari struktur data Tuple di Python?",
+        "options": [
+          "Bisa ditambah item baru kapan saja",
+          "Immutable (tidak dapat diubah isinya)",
+          "Selalu mengurutkan angka otomatis"
+        ],
+        "answer": 1,
+        "explanation": "Tuple bersifat immutable, artinya elemen-elemen di dalamnya tidak bisa dimodifikasi setelah dibuat."
+      },
+      {
+        "id": "tupleset-q2",
+        "question": "Apa hasil dari ekspresi len(set([1, 1, 2, 2, 3]))?",
+        "options": [
+          "5",
+          "3",
+          "2"
+        ],
+        "answer": 1,
+        "explanation": "Set menyaring angka duplikat sehingga menyisakan elemen {1, 2, 3}, yang berjumlah 3 item."
+      },
+      {
+        "id": "tupleset-q3",
+        "question": "Operator apa yang digunakan untuk mencari irisan (elemen yang sama) antara dua Set?",
+        "options": [
+          "|",
+          "&",
+          "+"
+        ],
+        "answer": 1,
+        "explanation": "Operator ampersand (&) digunakan untuk mencari intersection (irisan) antara dua set."
+      }
+    ],
+    "takeaways": [
+      "Gunakan <code>tuple ()</code> untuk data permanen yang tidak boleh berubah.",
+      "Gunakan <code>set {}</code> untuk menyaring duplikat dan operasi himpunan matematika.",
+      "Tuple satu elemen wajib memiliki koma di ujungnya: <code>(nilai,)</code>."
+    ]
+  },
+  {
+    "slug": "comprehension",
+    "title": "List Comprehension",
+    "level": 4,
+    "levelName": "Struktur data",
+    "duration": 8,
+    "difficulty": "Lumayan",
+    "description": "Menulis perulangan pembuatan list dalam satu baris anggun dan ringkas.",
+    "icon": "fa-wand-sparkles",
+    "pipiTip": "Rumus cepatnya: [apa_yang_dihasilkan for item in koleksi if syaratnya]!",
+    "funFact": "List comprehension sering dieksekusi lebih cepat oleh mesin Python dibanding for-loop manual biasa!",
+    "analogy": {
+      "title": "Mesin pemotong kue cetak otomatis",
+      "paragraphs": [
+        "Cara lama membuat adonan kue: ambil satu per satu, bentuk bulat, lalu masukkan ke loyang (butuh 4-5 baris kode loop).",
+        "List comprehension itu seperti mesin cetak otomatis: kamu taruh adonan di satu ujung, atur cetakan bintang, dan dalam sekejap loyang sudah penuh dengan kue berbentuk seragam hanya dengan satu instruksi!"
+      ]
+    },
+    "concept": {
+      "title": "Menulis Kode Bersih Gaya \"Pythonic\"",
+      "lead": "Teknik khas Python yang membuat kode terasa elegan dan menghemat banyak baris.",
+      "points": [
+        "<strong>Sintaks Dasar:</strong> <code>[ekspresi for item in koleksi]</code>.",
+        "<strong>Dengan Filter Syarat:</strong> <code>[ekspresi for item in koleksi if kondisi]</code>.",
+        "<strong>Kelebihan:</strong> Menghilangkan kebutuhan membuat list kosong dan memanggil <code>.append()</code> berulang kali."
+      ]
+    },
+    "codeExample": {
+      "filename": "promo_jajan.py",
+      "code": "# Daftar harga jajan asli\ndaftar_harga = [12000, 25000, 8000, 30000, 15000]\n\n# Cara elegan: beri diskon 20% HANYA untuk makanan di atas Rp10.000\nharga_promo = [int(h * 0.8) for h in daftar_harga if h >= 10000]\n\n# Membuat daftar nama camilan bertanda bintang\nmenu = [\"boba\", \"mochi\", \"croissant\"]\nmenu_kawaii = [f\"⭐ {item.title()}\" for item in menu]\n\nprint(f\"Harga promo: {harga_promo}\")\nprint(f\"Menu estetik: {menu_kawaii}\")",
+      "highlight": [
+        5,
+        9
+      ],
+      "explanations": [
+        "Baris 5: <code>[int(h * 0.8) for h in daftar_harga if h &gt;= 10000]</code> melakukan filtering sekaligus perhitungan harga diskon dalam 1 baris.",
+        "Baris 9: mengubah setiap string di list menu menjadi format title dengan emoji bintang.",
+        "Hasilnya instan tanpa perlu membuat variabel penampung kosong terlebih dahulu."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Terlalu Rumit Sampai Sulit Dibaca",
+      "text": "Meskipun list comprehension itu keren, jangan menumpuk logika yang terlalu panjang atau beranak-pinak di satu baris. Pedoman Zen of Python berbunyi: <em>\"Readability counts\"</em> (keterbacaan kode adalah yang utama)!"
+    },
+    "practice": {
+      "instruction": "Buatlah list baru yang berisi angka kuadrat dari 1 sampai 5 menggunakan list comprehension!",
+      "code": "kuadrat = [angka ** 2 for angka in range(1, 6)]\nprint(f\"Angka kuadrat: {kuadrat} ✨\")"
+    },
+    "quizzes": [
+      {
+        "id": "comp-q1",
+        "question": "Apa hasil dari ekspresi [x * 2 for x in [1, 2, 3]]?",
+        "options": [
+          "[1, 2, 3, 1, 2, 3]",
+          "[2, 4, 6]",
+          "[2, 2, 2]"
+        ],
+        "answer": 1,
+        "explanation": "Setiap elemen x (1, 2, 3) dikalikan dengan 2 menghasilkan [2, 4, 6]."
+      },
+      {
+        "id": "comp-q2",
+        "question": "Di bagian mana kita meletakkan filter syarat pada list comprehension dasar?",
+        "options": [
+          "Di paling depan sebelum kurung siku",
+          "Di bagian paling akhir setelah for ... in ...",
+          "Di dalam tanda kurung kurawal terpisah"
+        ],
+        "answer": 1,
+        "explanation": "Klausul filter syarat diletakkan di akhir: [ekspresi for item in list if syarat]."
+      },
+      {
+        "id": "comp-q3",
+        "question": "Apa keuntungan utama memakai list comprehension?",
+        "options": [
+          "Membuat komputer bisa bicara",
+          "Kode lebih ringkas, mudah dibaca, dan seringkali lebih cepat dieksekusi",
+          "Otomatis menyimpan kode ke cloud"
+        ],
+        "answer": 1,
+        "explanation": "List comprehension membuat pembuatan list baru menjadi deklaratif, singkat, dan berkinerja tinggi."
+      }
+    ],
+    "takeaways": [
+      "List comprehension menggantikan pola loop append konvensional.",
+      "Bisa dilengkapi filter kondisi dengan menyisipkan klausa <code>if</code> di akhir.",
+      "Gunakan secukupnya dan utamakan kode yang tetap nyaman dibaca teman timmu."
+    ]
+  },
+  {
+    "slug": "slicing-sort-search",
+    "title": "Slicing, Mengurutkan, & Mencari Data",
+    "level": 4,
+    "levelName": "Struktur data",
+    "duration": 9,
+    "difficulty": "Lumayan",
+    "description": "Memotong sepotong kue data, menyusun dari yang termurah, dan melacak keberadaan nilai.",
+    "icon": "fa-arrow-down-a-z",
+    "pipiTip": "Trik sulap membalik urutan list atau teks di Python: cukup pakai syntax [::-1]!",
+    "funFact": "Fungsi sorted() tidak mengubah list aslinya, sedangkan method .sort() mengubah langsung susunan list aslinya di tempat!",
+    "analogy": {
+      "title": "Memotong kue lapis dan menata rak buku",
+      "paragraphs": [
+        "Bayangkan kamu punya kue lapis warna-warni yang panjang. Kamu ingin memotong dan mengambil lapisan dari lapis ke-2 sampai lapis ke-4 saja. Di Python, operasi potong memotong ini disebut <strong>slicing</strong>.",
+        "Setelah itu, kamu ingin menata buku komik di rak: diurutkan dari seri awal sampai seri terbaru (sorting), dan mengecek apakah komik edisi spesial ada di rak tersebut (searching)."
+      ]
+    },
+    "concept": {
+      "title": "Rumus Slicing & Pengurutan",
+      "lead": "Manipulasi deret data dengan ekspresi ringkas bawaan Python.",
+      "points": [
+        "<strong>Slicing [start:stop:step]:</strong> Mengambil cuplikan data dari indeks <code>start</code> hingga sebelum <code>stop</code>.",
+        "<strong>sorted(koleksi):</strong> Menghasilkan list baru yang sudah terurut rapi.",
+        "<strong>koleksi.sort(reverse=True):</strong> Mengurutkan list secara langsung dari nilai terbesar ke terkecil.",
+        "<strong>Operator in:</strong> Memeriksa apakah suatu nilai ada di dalam list (contoh: <code>\"mochi\" in jajan</code>)."
+      ]
+    },
+    "codeExample": {
+      "filename": "olah_koleksi.py",
+      "code": "# Daftar playlist lagu santai\nlagu = [\"Ditto\", \"OMG\", \"Hype Boy\", \"Super Shy\", \"Cookie\"]\n\n# Slicing: ambil 3 lagu pertama\ntop_tiga = lagu[0:3]\n\n# Membalik urutan dengan langkah mundur -1\nterbalik = lagu[::-1]\n\n# Mengurutkan berdasarkan abjad A-Z\nlagu_urut = sorted(lagu)\n\n# Mencari keberadaan lagu\nada_ditto = \"Ditto\" in lagu\n\nprint(f\"Top 3 : {top_tiga}\")\nprint(f\"Dibalik : {terbalik}\")\nprint(f\"Abjad : {lagu_urut}\")\nprint(f\"Ada lagu Ditto? {ada_ditto} 🎧\")",
+      "highlight": [
+        5,
+        8,
+        11,
+        14
+      ],
+      "explanations": [
+        "Baris 5: <code>lagu[0:3]</code> mengambil indeks 0, 1, dan 2.",
+        "Baris 8: <code>[::-1]</code> adalah cara cepat membalik list dari belakang ke depan.",
+        "Baris 11: <code>sorted()</code> menyusun data sesuai urutan abjad secara otomatis.",
+        "Baris 14: operator <code>in</code> mengembalikan nilai Boolean (True/False)."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Mengira .sort() Mengembalikan List Baru",
+      "text": "Method <code>list.sort()</code> mengurutkan data langsung di tempat dan mengembalikan nilai <code>None</code>. Jadi jangan menulis <code>hasil = daftar.sort()</code> karena <code>hasil</code> akan bernilai kosong! Gunakan <code>hasil = sorted(daftar)</code> jika ingin disimpan ke variabel baru."
+    },
+    "practice": {
+      "instruction": "Baliklah kata sandi rahasia berikut menggunakan trik slicing [::-1]!",
+      "code": "sandi_terbalik = \"ipip_gnidogn\"\nsandi_asli = sandi_terbalik[::-1]\nprint(f\"Kata sandi terbaca: {sandi_asli} 🔑\")"
+    },
+    "quizzes": [
+      {
+        "id": "slice-q1",
+        "question": "Apa hasil dari ekspresi [10, 20, 30, 40][1:3]?",
+        "options": [
+          "[10, 20]",
+          "[20, 30]",
+          "[20, 30, 40]"
+        ],
+        "answer": 1,
+        "explanation": "Slicing dari indeks 1 hingga sebelum 3 mengambil elemen indeks 1 (20) dan indeks 2 (30)."
+      },
+      {
+        "id": "slice-q2",
+        "question": "Bagaimana cara cepat membalik teks atau list dari belakang ke depan di Python?",
+        "options": [
+          "[::reverse]",
+          "[::-1]",
+          "[back:front]"
+        ],
+        "answer": 1,
+        "explanation": "Slicing dengan langkah -1 ([::-1]) melangkah mundur dari akhir ke awal."
+      },
+      {
+        "id": "slice-q3",
+        "question": "Operator apa yang digunakan untuk memeriksa keberadaan suatu item di dalam list?",
+        "options": [
+          "has",
+          "in",
+          "exists"
+        ],
+        "answer": 1,
+        "explanation": "Kata kunci \"in\" digunakan untuk keanggotaan koleksi di Python."
+      }
+    ],
+    "takeaways": [
+      "Gunakan sintaks <code>[start:stop:step]</code> untuk mengambil irisan data.",
+      "Gunakan <code>sorted()</code> untuk salinan terurut dan <code>.sort()</code> untuk urut di tempat.",
+      "Gunakan operator <code>in</code> untuk mencari keberadaan elemen secara praktis."
+    ]
+  },
+  {
+    "slug": "fungsi",
+    "title": "Fungsi: Resep Masakan Andalanmu",
+    "level": 5,
+    "levelName": "Fungsi & modul",
+    "duration": 9,
+    "difficulty": "Gampang",
+    "description": "Membungkus langkah kerja ke dalam satu nama resep agar bisa dipanggil berkali-kali tanpa lelah.",
+    "icon": "fa-mortar-pestle",
+    "pipiTip": "Fungsi itu kayak tombol blender: kamu masukkan buah (parameter), tekan tombol, lalu keluar jus segar (return)!",
+    "funFact": "Kata kunci \"def\" di Python adalah kependekan dari \"define\" (mendefinisikan fungsi).",
+    "analogy": {
+      "title": "Buku resep kue tart andalan",
+      "paragraphs": [
+        "Bayangkan kamu punya resep rahasia membuat pancake terenak di dunia. Ada 7 langkah: pecahkan telur, tuang susu, aduk tepung, panaskan wajan, dan seterusnya.",
+        "Kalau setiap kali ada teman yang minta pancake kamu harus menulis ulang 7 langkah itu di kertas baru, tanganmu pasti pegal! Jauh lebih praktis kalau kamu beri nama resep itu: <code>bikin_pancake()</code>. Kapanpun mau, tinggal panggil namanya!"
+      ]
+    },
+    "concept": {
+      "title": "Anatomi Sebuah Fungsi di Python",
+      "lead": "Bagaimana membuat dan menggunakan fungsi buatanmu sendiri.",
+      "points": [
+        "<strong>def nama_fungsi(parameter):</strong> Mendeklarasikan resep fungsi baru.",
+        "<strong>Parameter vs Argumen:</strong> Parameter adalah variabel penampung di dalam definisi fungsi; argumen adalah nilai nyata yang dikirim saat fungsi dipanggil.",
+        "<strong>return:</strong> Mengirimkan hasil olahan fungsi kembali ke pemanggil. Tanpa return, fungsi akan mengembalikan <code>None</code>.",
+        "<strong>Default Argument:</strong> Menentukan nilai cadangan jika pengguna tidak mengirimkan argumen tertentu."
+      ]
+    },
+    "codeExample": {
+      "filename": "dapur_resep.py",
+      "code": "# Mendefinisikan fungsi peracik minuman\ndef racik_boba(rasa, porsi=1, manis=\"sedang\"):\n    \"\"\"Fungsi untuk menghitung dan menyiapkan pesanan boba.\"\"\"\n    pesan = f\"{porsi} gelas Boba {rasa} (manis: {manis})\"\n    return f\"Siap disajikan: {pesan} 🧋\"\n\n# Memanggil fungsi dengan berbagai cara\npesanan_1 = racik_boba(\"Matcha\")  # memakai nilai default porsi & manis\npesanan_2 = racik_boba(\"Taro\", porsi=2, manis=\"less sugar\")\n\nprint(pesanan_1)\nprint(pesanan_2)",
+      "highlight": [
+        2,
+        5,
+        8,
+        9
+      ],
+      "explanations": [
+        "Baris 2: mendefinisikan fungsi dengan parameter default <code>porsi=1</code> dan <code>manis=\"sedang\"</code>.",
+        "Baris 5: <code>return</code> mengembalikan string hasil olahan ke tempat fungsi dipanggil.",
+        "Baris 8: pemanggilan hanya mengirim rasa <code>\"Matcha\"</code>, sisanya memakai nilai bawaan default.",
+        "Baris 9: pemanggilan memakai keyword argument yang sangat jelas dibaca."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Lupa Menggunakan return",
+      "text": "Banyak pemula mengira <code>print()</code> di dalam fungsi itu sama dengan <code>return</code>. Kalau kamu menulis <code>total = hitung_harga()</code> padahal fungsinya hanya berisi print tanpa return, maka variabel <code>total</code> akan bernilai <code>None</code> dan tidak bisa dipakai berhitung lagi!"
+    },
+    "practice": {
+      "instruction": "Buat fungsi hitung_diskon yang menerima harga dan persen diskon, lalu kembalikan harga akhirnya!",
+      "code": "def hitung_diskon(harga, persen=10):\n    potongan = harga * (persen / 100)\n    return harga - potongan\n\ntotal = hitung_diskon(50000, 20)\nprint(f\"Harga setelah diskon: Rp{total:,.0f} ✨\")"
+    },
+    "quizzes": [
+      {
+        "id": "func-q1",
+        "question": "Kata kunci apa yang digunakan untuk mendefinisikan fungsi di Python?",
+        "options": [
+          "function",
+          "def",
+          "create"
+        ],
+        "answer": 1,
+        "explanation": "Di Python, pembuatan fungsi selalu diawali dengan kata kunci \"def\"."
+      },
+      {
+        "id": "func-q2",
+        "question": "Apa nilai kembalian dari fungsi yang tidak memiliki pernyataan return?",
+        "options": [
+          "0",
+          "False",
+          "None"
+        ],
+        "answer": 2,
+        "explanation": "Jika sebuah fungsi selesai dieksekusi tanpa menemui return, Python otomatis mengembalikan nilai None."
+      },
+      {
+        "id": "func-q3",
+        "question": "Apa fungsi dari default parameter pada \"def sapa(nama='Teman'):\"?",
+        "options": [
+          "Memaksa pengguna mengetik nama",
+          "Menyediakan nilai cadangan jika pemanggil tidak mengirim argumen nama",
+          "Menghapus nama yang dikirim"
+        ],
+        "answer": 1,
+        "explanation": "Default argument bertindak sebagai nilai pengganti jika argumen tidak diisi saat pemanggilan."
+      }
+    ],
+    "takeaways": [
+      "Bungkus blok kode yang sering digunakan ke dalam fungsi dengan kata kunci <code>def</code>.",
+      "Gunakan <code>return</code> untuk mengirimkan hasil perhitungan keluar dari fungsi.",
+      "Manfaatkan default parameter untuk membuat fungsi lebih fleksibel digunakan."
+    ]
+  },
+  {
+    "slug": "fungsi-lanjutan",
+    "title": "Parameter, Scope, *args, & **kwargs",
+    "level": 5,
+    "levelName": "Fungsi & modul",
+    "duration": 9,
+    "difficulty": "Menantang",
+    "description": "Menerima topping tak terbatas dengan *args dan **kwargs, serta memahami batas wilayah variabel.",
+    "icon": "fa-boxes-packing",
+    "pipiTip": "*args itu untuk daftar topping ekstra, sedangkan **kwargs untuk catatan khusus pesanan!",
+    "funFact": "Tanda bintang satu (*) membungkus argumen menjadi tuple, sedangkan tanda bintang ganda (**) membungkusnya jadi dictionary!",
+    "analogy": {
+      "title": "Prasmanan topping es krim dan kamar pribadi",
+      "paragraphs": [
+        "Pernah ke kedai es krim yang membebaskanmu memilih topping sesukamu? Ada yang mau 1 topping, ada yang mau 5 topping. Pelayan memakai wadah fleksibel bernama <code>*args</code> untuk menampung semuanya.",
+        "Lalu apa itu <strong>Scope</strong>? Bayangkan kamarmu sendiri (variabel lokal): barang-barang di kamarmu hanya bisa kamu lihat. Berbeda dengan lampu taman kompleks perumahan (variabel global) yang bisa dilihat oleh seluruh warga!"
+      ]
+    },
+    "concept": {
+      "title": "Fleksibilitas Argumen & Batas Wilayah Scope",
+      "lead": "Mekanisme lanjutan untuk merancang fungsi sekelas pustaka profesional.",
+      "points": [
+        "<strong>*args:</strong> Menampung sejumlah argumen posisi tambahan ke dalam bentuk <code>tuple</code>.",
+        "<strong>**kwargs:</strong> Menampung sejumlah argumen bernama (keyword) tambahan ke dalam bentuk <code>dict</code>.",
+        "<strong>Local Scope:</strong> Variabel yang dibuat di dalam fungsi hanya hidup selama fungsi tersebut berjalan.",
+        "<strong>Global Scope:</strong> Variabel yang dibuat di tingkat utama file dan bisa dibaca dari mana saja."
+      ]
+    },
+    "codeExample": {
+      "filename": "pesanan_custom.py",
+      "code": "# Toko kue dengan pesanan serba bebas\ntoko_aktif = True  # Variabel global\n\ndef racik_dessert(nama_dasar, *toppings, **catatan_khusus):\n    \"\"\"Menerima topping berapapun dan catatan tambahan apapun.\"\"\"\n    print(f\"\\n🍰 Menu: {nama_dasar}\")\n    if toppings:\n        print(f\"Topping tambahan ({len(toppings)}): {', '.join(toppings)}\")\n    if catatan_khusus:\n        print(\"Catatan dapur:\")\n        for kunci, nilai in catatan_khusus.items():\n            print(f\"  - {kunci}: {nilai}\")\n\nracik_dessert(\"Waffle Matcha\", \"Keju\", \"Cokelat Crunch\", \"Almond\", meja=7, takeaway=True)",
+      "highlight": [
+        4,
+        7,
+        9,
+        14
+      ],
+      "explanations": [
+        "<code>*toppings</code>: mengumpulkan <code>\"Keju\"</code>, <code>\"Cokelat Crunch\"</code>, dan <code>\"Almond\"</code> ke dalam satu tuple.",
+        "<code>**catatan_khusus</code>: menangkap <code>meja=7</code> dan <code>takeaway=True</code> menjadi dictionary.",
+        "Fungsi ini sangat luwes dan tidak akan pernah error meskipun jumlah topping berubah-ubah."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Mengubah Variabel Global Sembarangan",
+      "text": "Meskipun fungsi bisa membaca variabel global, mencoba mengubah nilainya di dalam fungsi tanpa deklarasi kata kunci <code>global</code> akan memicu pembuatan variabel lokal baru dengan nama yang sama, atau bahkan error <code>UnboundLocalError</code>!"
+    },
+    "practice": {
+      "instruction": "Buat fungsi hitung_total_harga yang menjumlahkan semua angka yang dimasukkan ke *harga!",
+      "code": "def hitung_total(*daftar_harga):\n    return sum(daftar_harga)\n\ntotal_jajan = hitung_total(15000, 22000, 8000, 10000)\nprint(f\"Total belanjaan hari ini: Rp{total_jajan:,} 🛍️\")"
+    },
+    "quizzes": [
+      {
+        "id": "scope-q1",
+        "question": "Tipe data apakah yang dihasilkan dari parameter *args di dalam fungsi?",
+        "options": [
+          "List",
+          "Tuple",
+          "Dictionary"
+        ],
+        "answer": 1,
+        "explanation": "Python otomatis mengemas semua argumen posisi berlebih dari *args menjadi sebuah Tuple."
+      },
+      {
+        "id": "scope-q2",
+        "question": "Tipe data apakah yang dihasilkan dari parameter **kwargs di dalam fungsi?",
+        "options": [
+          "Set",
+          "String",
+          "Dictionary"
+        ],
+        "answer": 2,
+        "explanation": "Parameter bertanda bintang ganda **kwargs mengemas argumen bernama menjadi Dictionary (key: value)."
+      },
+      {
+        "id": "scope-q3",
+        "question": "Di mana variabel yang dibuat di dalam sebuah fungsi bisa diakses?",
+        "options": [
+          "Hanya di dalam fungsi itu sendiri (local scope)",
+          "Di seluruh file komputer mana saja",
+          "Di terminal saja"
+        ],
+        "answer": 0,
+        "explanation": "Variabel yang dibuat di dalam fungsi memiliki scope lokal dan akan terhapus dari memori saat fungsi selesai."
+      }
+    ],
+    "takeaways": [
+      "Gunakan <code>*args</code> untuk menangkap argumen posisi fleksibel sebagai tuple.",
+      "Gunakan <code>**kwargs</code> untuk menangkap argumen bernama sebagai dictionary.",
+      "Variabel lokal terlindungi di dalam fungsinya dan tidak mencemari variabel global."
+    ]
+  },
+  {
+    "slug": "lambda-stdlib-modul",
+    "title": "Lambda & Library Standar Python",
+    "level": 5,
+    "levelName": "Fungsi & modul",
+    "duration": 9,
+    "difficulty": "Lumayan",
+    "description": "Fungsi kilat satu baris dan menjelajahi gudang senjata bawaan: math, random, dan datetime.",
+    "icon": "fa-box-open",
+    "pipiTip": "Modul standar Python itu kayak gudang harta karun: gratis dan sudah terpasang tanpa perlu download apapun!",
+    "funFact": "Filosofi Python dikenal dengan semboyan \"Batteries Included\", artinya fitur-fitur penting sudah lengkap tersedia sejak pertama diinstal!",
+    "analogy": {
+      "title": "Kotak peralatan tukang serba ada",
+      "paragraphs": [
+        "Bayangkan kamu baru beli rumah baru dan di garasinya sudah ada satu kotak perkakas super lengkap: ada meteran ukur (<code>math</code>), ada dadu undian berhadiah (<code>random</code>), dan ada jam dinding kalender (<code>datetime</code>).",
+        "Kamu nggak perlu membuat meteran atau jam sendiri dari kayu dan kawat. Cukup buka kotaknya dengan mantra <code>import</code>, dan alat tersebut langsung siap kamu gunakan!"
+      ]
+    },
+    "concept": {
+      "title": "Tiga Modul Primadona & Fungsi Kilat Lambda",
+      "lead": "Alat-alat wajib yang membuat kodemu berdaya tinggi secara instan.",
+      "points": [
+        "<strong>Lambda (Fungsi Anonim):</strong> <code>lambda parameter: ekspresi</code> untuk fungsi mungil satu baris tanpa nama.",
+        "<strong>Modul math:</strong> Menyediakan perhitungan canggih seperti akar kuadrat (<code>math.sqrt</code>) dan pembulatan ke atas (<code>math.ceil</code>).",
+        "<strong>Modul random:</strong> Menghasilkan undian acak (<code>random.choice</code>, <code>random.randint</code>).",
+        "<strong>Modul datetime:</strong> Mengambil tanggal dan waktu saat ini (<code>datetime.date.today()</code>)."
+      ]
+    },
+    "codeExample": {
+      "filename": "gudang_ajaib.py",
+      "code": "import math\nimport random\nfrom datetime import date\n\n# 1. Lambda: fungsi kilat menghitung PPN 11%\nhitung_ppn = lambda harga: harga * 0.11\nprint(f\"PPN Rp50.000: Rp{hitung_ppn(50000):,.0f}\")\n\n# 2. Random: undian camilan keberuntungan\nmenu = [\"Mochi Stroberi 🍓\", \"Matcha Latte 🍵\", \"Boba Brown Sugar 🧋\"]\npilihan_pipi = random.choice(menu)\nprint(f\"Camilan keberuntunganmu hari ini: {pilihan_pipi}\")\n\n# 3. Datetime: mencetak tanggal hari ini\nhari_ini = date.today()\nprint(f\"Tanggal transaksi: {hari_ini.strftime('%d-%m-%Y')} ✨\")",
+      "highlight": [
+        1,
+        2,
+        3,
+        6,
+        11,
+        16
+      ],
+      "explanations": [
+        "Baris 1-3: mengimpor modul bawaan <code>math</code>, <code>random</code>, dan <code>datetime</code>.",
+        "Baris 6: fungsi lambda singkat tanpa perlu sintaks <code>def</code> yang panjang.",
+        "Baris 11: <code>random.choice()</code> memilih salah satu elemen secara acak dan adil.",
+        "Baris 16: <code>.strftime('%d-%m-%Y')</code> memformat tanggal menjadi gaya Indonesia (tanggal-bulan-tahun)."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Menamai File Sendiri Sama dengan Nama Modul",
+      "text": "Jangan pernah menamai file kodingmu dengan nama <code>random.py</code> atau <code>math.py</code>! Jika kamu melakukannya, saat kamu menulis <code>import random</code>, Python akan mengimpor filemu sendiri yang kosong dan memicu <code>AttributeError</code>."
+    },
+    "practice": {
+      "instruction": "Buat dadu angka acak 1 sampai 6 menggunakan modul random!",
+      "code": "import random\nangka_dadu = random.randint(1, 6)\nprint(f\"Dadu Pipi berputar dan menghasilkan angka: {angka_dadu} 🎲\")"
+    },
+    "quizzes": [
+      {
+        "id": "stdlib-q1",
+        "question": "Bagaimana sintaks pembuatan fungsi anonim (lambda) di Python?",
+        "options": [
+          "def lambda(x): return x * 2",
+          "lambda x: x * 2",
+          "x => x * 2"
+        ],
+        "answer": 1,
+        "explanation": "Di Python, fungsi lambda ditulis dengan sintaks: lambda parameter: ekspresi."
+      },
+      {
+        "id": "stdlib-q2",
+        "question": "Fungsi dari modul random apa yang paling tepat untuk memilih 1 pemenang dari daftar nama di list?",
+        "options": [
+          "random.randint()",
+          "random.choice()",
+          "random.sample_one()"
+        ],
+        "answer": 1,
+        "explanation": "random.choice(koleksi) secara otomatis memilih satu elemen acak dari sebuah sequence/list."
+      },
+      {
+        "id": "stdlib-q3",
+        "question": "Mengapa Python sering dijuluki bahasa yang memiliki filosofi \"Batteries Included\"?",
+        "options": [
+          "Karena hemat baterai laptop",
+          "Karena pustaka standarnya (standard library) sangat lengkap dan siap pakai",
+          "Karena bisa mengisi daya HP"
+        ],
+        "answer": 1,
+        "explanation": "Istilah ini mengacu pada kelengkapan modul standar bawaan Python yang sudah sangat kaya fungsi sejak awal diinstal."
+      }
+    ],
+    "takeaways": [
+      "Gunakan <code>lambda</code> untuk fungsi mini satu kali pakai.",
+      "Manfaatkan modul bawaan seperti <code>math</code>, <code>random</code>, dan <code>datetime</code>.",
+      "Hindari menamai file kodingmu sendiri sama persis dengan nama modul standar."
+    ]
+  },
+  {
+    "slug": "modul",
+    "title": "Modul & Import Mandiri",
+    "level": 5,
+    "levelName": "Fungsi & modul",
+    "duration": 8,
+    "difficulty": "Gampang",
+    "description": "Memecah kode panjang menjadi beberapa file rapi yang bisa saling bekerja sama.",
+    "icon": "fa-puzzle-piece",
+    "pipiTip": "File Python berekstensi .py yang kamu simpan bisa langsung diimpor ke file lain layaknya modul pro!",
+    "funFact": "Variabel rahasia __name__ bernilai \"__main__\" jika file dijalankan langsung, dan berisi nama file jika sedang diimpor!",
+    "analogy": {
+      "title": "Kotak makeup terpisah per kategori",
+      "paragraphs": [
+        "Kalau kamu menyimpan lipstik, eyeshadow, kuas, skincare, dan parfum semuanya dicampur di satu kantong plastik kresek, kamu pasti stres saat mencari lip balm.",
+        "Jauh lebih rapi kalau kamu punya kotak terpisah: satu kotak untuk kuas, satu untuk bibir. Di Python, file terpisah ini disebut <strong>modul</strong>. Program utamamu tinggal meminjam fungsi dari modul yang tepat saat dibutuhkan!"
+      ]
+    },
+    "concept": {
+      "title": "Cara Mengatur File Modular di Proyekmu",
+      "lead": "Langkah memecah proyek besar menjadi bagian-bagian yang mudah dirawat.",
+      "points": [
+        "<strong>import nama_file:</strong> Mengimpor seluruh isi file modul ke dalam file saat ini.",
+        "<strong>from nama_file import fungsi:</strong> Mengimpor bagian tertentu saja agar bisa dipanggil langsung namanya.",
+        "<strong>as (Alias):</strong> Memberi nama panggilan pendek agar tidak pegal mengetik (misal <code>import math as m</code>).",
+        "<strong>if __name__ == \"__main__\":</strong> Blok kode penjaga yang hanya berjalan jika file tersebut dieksekusi langsung, bukan diimpor."
+      ]
+    },
+    "codeExample": {
+      "filename": "kalkulator_diskon.py",
+      "code": "# File: kalkulator_diskon.py (modul pembantu)\ndef hitung_harga_akhir(harga, diskon_persen=10):\n    \"\"\"Menghitung harga setelah dipotong diskon.\"\"\"\n    potongan = harga * (diskon_persen / 100)\n    return harga - potongan\n\n# File: main.py (program utama yang mengimpor modul di atas)\n# from kalkulator_diskon import hitung_harga_akhir as diskon\n\nharga_baju = 150000\ntagihan = hitung_harga_akhir(harga_baju, diskon_persen=25)\nprint(f\"Harga baju diskon: Rp{tagihan:,.0f} 👗✨\")",
+      "highlight": [
+        2,
+        11,
+        12
+      ],
+      "explanations": [
+        "Baris 2-5: fungsi diletakkan di file terpisah agar bisa dipakai berulang kali di berbagai program.",
+        "Baris 9: contoh pemanggilan modul dengan alias <code>as diskon</code>.",
+        "Membuat kode proyek jadi modular, rapi, dan mudah didebug saat ada kesalahan."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Modul Berada di Folder yang Salah",
+      "text": "Jika kamu mengimpor file buatanmu sendiri, pastikan file tersebut berada di folder yang sama (satu direktori) dengan file utama yang memanggilnya, atau berada di dalam folder package yang memiliki file <code>__init__.py</code>."
+    },
+    "practice": {
+      "instruction": "Ubah fungsi di bawah seolah-olah kamu mengimpor modul sapaan khusus dari Pipi!",
+      "code": "def sapa_teman(nama):\n    return f\"Hai {nama}, Pipi senang kamu belajar sampai Level 5! 💖\"\n\nprint(sapa_teman(\"Zahra\"))"
+    },
+    "quizzes": [
+      {
+        "id": "mod-q1",
+        "question": "Bagaimana cara mengimpor hanya fungsi \"sqrt\" dari modul \"math\"?",
+        "options": [
+          "import sqrt from math",
+          "from math import sqrt",
+          "take sqrt from math"
+        ],
+        "answer": 1,
+        "explanation": "Sintaks resmi Python untuk mengambil komponen spesifik adalah: from modul import komponen."
+      },
+      {
+        "id": "mod-q2",
+        "question": "Apa fungsi kata kunci \"as\" saat melakukan impor?",
+        "options": [
+          "Untuk mengubah kode menjadi bahasa asing",
+          "Memberi nama alias atau nama panggilan pengganti",
+          "Menghapus modul asli"
+        ],
+        "answer": 1,
+        "explanation": "Kata kunci \"as\" digunakan untuk aliasing (misal import datetime as dt)."
+      },
+      {
+        "id": "mod-q3",
+        "question": "Apa nilai dari variabel bawaan __name__ jika file dijalankan langsung oleh pengguna?",
+        "options": [
+          "\"__main__\"",
+          "\"run\"",
+          "\"true\""
+        ],
+        "answer": 0,
+        "explanation": "Jika file dieksekusi secara langsung, Python memberi nilai string \"__main__\" ke variabel spesial __name__."
+      }
+    ],
+    "takeaways": [
+      "Pecah kode panjang menjadi beberapa file modul berekstensi <code>.py</code>.",
+      "Gunakan <code>from ... import ...</code> untuk mengimpor fungsi spesifik.",
+      "Gunakan <code>if __name__ == \"__main__\":</code> untuk melindungi kode uji coba modul."
+    ]
+  },
+  {
+    "slug": "file-dan-error",
+    "title": "File Handling & Exception Handling",
+    "level": 6,
+    "levelName": "Lebih serius",
+    "duration": 10,
+    "difficulty": "Lumayan",
+    "description": "Menyimpan catatan abadi ke dalam file teks dan menangani error tak terduga dengan sabar.",
+    "icon": "fa-shield-heart",
+    "pipiTip": "Selalu pakai \"with open(...)\" saat buka file: pintunya otomatis ditutup rapat walau listrik tiba-tiba padam!",
+    "funFact": "Parameter encoding=\"utf-8\" sangat penting agar teks dengan huruf non-latin dan emoji tidak menjadi tulisan aneh!",
+    "analogy": {
+      "title": "Buku harian rahasia dan payung saat badai",
+      "paragraphs": [
+        "Selama ini, semua variabel yang kita buat hilang saat program dimatikan (seperti tulisan di papan tulis yang dihapus). Menyimpan ke <strong>file</strong> itu seperti menulis di buku harian berhalaman kertas: tulisannya tetap ada besok pagi!",
+        "Sedangkan <strong>try-except</strong> itu seperti sedia payung sebelum hujan. Kamu tahu bisa saja ada badai (file hilang, pengguna salah ketik), jadi kamu siapkan tindakan darurat agar acaramu tidak bubar berantakan."
+      ]
+    },
+    "concept": {
+      "title": "Membaca File & Menjinakkan Crash Program",
+      "lead": "Dua pilar utama untuk membuat aplikasi yang kokoh dan tahan banting.",
+      "points": [
+        "<strong>Context Manager with open():</strong> Membuka file dan otomatis menutupnya kembali setelah blok selesai.",
+        "<strong>Mode File:</strong> <code>\"r\"</code> (read/baca), <code>\"w\"</code> (write/tulis ulang dari awal), <code>\"a\"</code> (append/tambah di baris akhir).",
+        "<strong>try:</strong> Blok kode yang kita curigai berpotensi memicu error.",
+        "<strong>except JenisError:</strong> Aksi penyelamatan jika error tersebut benar-benar terjadi.",
+        "<strong>finally:</strong> Blok pembersihan yang selalu dijalankan apapun yang terjadi."
+      ]
+    },
+    "codeExample": {
+      "filename": "buku_harian.py",
+      "code": "# Menulis dan membaca catatan harian secara aman\nnama_file = \"catatan_jajan.txt\"\n\n# Menulis catatan baru\ntry:\n    with open(nama_file, \"w\", encoding=\"utf-8\") as f:\n        f.write(\"Beli Mochi Strawberry 🍓 - Rp15.000\\n\")\n        f.write(\"Beli Es Kopi Susu ☕ - Rp18.000\\n\")\n    print(\"Catatan berhasil tersimpan di file! 📝\")\n\n    # Membaca kembali isi catatan\n    with open(nama_file, \"r\", encoding=\"utf-8\") as f:\n        isi = f.read()\n    print(\"\\nIsi Catatan:\")\n    print(isi)\n\nexcept OSError as error:\n    print(f\"Gagal memproses file: {error}\")\nfinally:\n    print(\"Pipi selesai merapikan buku harian ✨\")",
+      "highlight": [
+        6,
+        12,
+        17,
+        19
+      ],
+      "explanations": [
+        "Baris 6: <code>with open(..., \"w\")</code> membuka file dalam mode tulis dan menjamin file tertutup otomatis.",
+        "<code>encoding=\"utf-8\"</code> memastikan karakter khusus dan emoji tersimpan sempurna tanpa rusak.",
+        "Baris 12: mode <code>\"r\"</code> membuka file untuk membaca seluruh isinya dengan <code>f.read()</code>.",
+        "Baris 17: menangani kemungkinan kegagalan akses sistem file tanpa membuat program langsung mati/crash."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Mode \"w\" Menghapus Seluruh Isi File Lama",
+      "text": "Hati-hati! Mode <code>\"w\"</code> akan menimpa dan MENGHAPUS bersih seluruh isi file lama jika file tersebut sudah ada sebelumnya. Jika kamu hanya ingin menambah baris baru di bagian bawah, gunakan mode append <code>\"a\"</code>!"
+    },
+    "practice": {
+      "instruction": "Gunakan try-except untuk menangkap error pembagian dengan angka 0!",
+      "code": "try:\n    total_uang = 50000\n    jumlah_orang = 0\n    bagian = total_uang / jumlah_orang\n    print(f\"Bagian per orang: Rp{bagian}\")\nexcept ZeroDivisionError:\n    print(\"Ups, tidak bisa membagi uang kepada 0 orang! 😅\")"
+    },
+    "quizzes": [
+      {
+        "id": "file-q1",
+        "question": "Mengapa penggunaan \"with open(...)\" sangat dianjurkan dibanding open() biasa?",
+        "options": [
+          "Karena membuat file otomatis terenkripsi",
+          "Karena otomatis menutup file setelah selesai meskipun terjadi error",
+          "Supaya ukuran file lebih kecil"
+        ],
+        "answer": 1,
+        "explanation": "Context manager \"with\" menjamin file descriptor selalu ditutup kembali dengan aman tanpa kebocoran resource."
+      },
+      {
+        "id": "file-q2",
+        "question": "Mode file apa yang digunakan untuk menambah teks baru di ujung file tanpa menghapus teks lama?",
+        "options": [
+          "\"r\"",
+          "\"w\"",
+          "\"a\""
+        ],
+        "answer": 2,
+        "explanation": "Mode \"a\" (append) menambahkan data baru di bagian akhir file tanpa menimpa data yang sudah ada."
+      },
+      {
+        "id": "file-q3",
+        "question": "Kapan blok \"finally:\" di dalam struktur try-except akan dijalankan?",
+        "options": [
+          "Hanya jika terjadi error",
+          "Hanya jika tidak ada error",
+          "Selalu dijalankan dalam kondisi apapun"
+        ],
+        "answer": 2,
+        "explanation": "Blok finally dijamin selalu dieksekusi, baik saat blok try berhasil maupun saat memicu exception."
+      }
+    ],
+    "takeaways": [
+      "Gunakan selalu <code>with open(..., encoding=\"utf-8\")</code> saat membaca/menulis file.",
+      "Mode <code>\"w\"</code> menimpa file lama, sedangkan mode <code>\"a\"</code> menambah baris baru.",
+      "Gunakan <code>try-except</code> untuk menangani error tak terduga secara elegan."
+    ]
+  },
+  {
+    "slug": "oop",
+    "title": "Pemrograman Berorientasi Objek (OOP)",
+    "level": 6,
+    "levelName": "Lebih serius",
+    "duration": 10,
+    "difficulty": "Menantang",
+    "description": "Menciptakan dunia dengan Class dan Object: cetakan kue, sifat kucing, dan hubungan keluarga.",
+    "icon": "fa-shapes",
+    "pipiTip": "Class itu cetakan kue martabak; sedangkan objek (object) adalah kue martabak nyata yang matang dari cetakan itu!",
+    "funFact": "Di Python, hampir segalanya sebenarnya adalah sebuah objek: angka, teks, bahkan fungsi!",
+    "analogy": {
+      "title": "Cetakan kue waffle dan kucing peliharaan nyata",
+      "paragraphs": [
+        "Bayangkan kamu punya cetakan waffle berbentuk hati (ini adalah <strong>Class</strong>). Cetakan ini punya pola dasar: ada telinga, ada hidung, dan ada rasa.",
+        "Saat kamu menuang adonan cokelat, jadi kue waffle bernama \"Mochi\". Saat menuang adonan matcha, jadi kue waffle bernama \"Boba\". Keduanya adalah <strong>Object</strong> nyata yang berasal dari satu cetakan yang sama, tapi punya sifat rasa dan warna yang unik!"
+      ]
+    },
+    "concept": {
+      "title": "Empat Pilar Penting OOP di Python",
+      "lead": "Cara programmer profesional memodelkan benda nyata ke dalam kode.",
+      "points": [
+        "<strong>Class & Object:</strong> Class adalah cetakan biru (blueprint); Object adalah contoh nyata (instance) dari class tersebut.",
+        "<strong>__init__ (Constructor):</strong> Metode khusus yang otomatis bekerja saat objek baru pertama kali dilahirkan.",
+        "<strong>self:</strong> Penunjuk diri sendiri, menghubungkan variabel ke objek spesifik yang bersangkutan.",
+        "<strong>Inheritance (Pewarisan):</strong> Mewariskan sifat dari class induk (hewan) ke class anak (kucing)."
+      ]
+    },
+    "codeExample": {
+      "filename": "dunia_kucing.py",
+      "code": "# Class Induk: Hewan Peliharaan Umum\nclass HewanPeliharaan:\n    def __init__(self, nama, umur):\n        self.nama = nama\n        self.umur = umur\n\n    def info(self):\n        return f\"{self.nama} ({self.umur} tahun)\"\n\n# Class Anak (Inheritance): Kucing mewarisi HewanPeliharaan\nclass Kucing(HewanPeliharaan):\n    def __init__(self, nama, umur, ras):\n        super().__init__(nama, umur)  # panggil constructor induk\n        self.ras = ras\n\n    def bersuara(self):\n        return f\"{self.nama} bilang: Meooong! 🐾\"\n\n# Menciptakan objek kucing nyata\nkucing_1 = Kucing(\"Mochi\", 2, \"British Shorthair\")\nprint(kucing_1.info())\nprint(kucing_1.bersuara())",
+      "highlight": [
+        2,
+        3,
+        10,
+        11,
+        19
+      ],
+      "explanations": [
+        "Baris 2: mendefinisikan class <code>HewanPeliharaan</code> dengan atribut <code>nama</code> dan <code>umur</code>.",
+        "Baris 10: <code>class Kucing(HewanPeliharaan)</code> mewarisi seluruh kemampuan class induknya.",
+        "Baris 12: <code>super().__init__(nama, umur)</code> mengoper data ke class induk secara elegan.",
+        "Baris 19: melahirkan objek nyata <code>kucing_1</code> bertipe <code>Kucing</code>."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Lupa Menuliskan self di Parameter Pertama Method",
+      "text": "Di Python, setiap method fungsi di dalam class WAJIB menyertakan <code>self</code> sebagai parameter pertamanya: <code>def bersuara(self):</code>. Jika kamu lupa menulis <code>self</code>, Python akan memicu <code>TypeError: takes 0 positional arguments but 1 was given</code>!"
+    },
+    "practice": {
+      "instruction": "Buat objek kucing baru bernama \"Luna\" yang berumur 1 tahun dan panggil suaranya!",
+      "code": "class KucingSederhana:\n    def __init__(self, nama):\n        self.nama = nama\n    def sapa(self):\n        return f\"Meong, aku {self.nama} si kucing gemas! 🐱\"\n\nkucing_pipi = KucingSederhana(\"Luna\")\nprint(kucing_pipi.sapa())"
+    },
+    "quizzes": [
+      {
+        "id": "oop-q1",
+        "question": "Apa fungsi utama dari method khusus __init__ di sebuah Class Python?",
+        "options": [
+          "Menghapus objek dari memori",
+          "Menginisialisasi nilai awal saat objek baru pertama kali dibuat",
+          "Menghubungkan class ke internet"
+        ],
+        "answer": 1,
+        "explanation": "__init__ adalah constructor yang otomatis dijalankan saat sebuah instance objek baru diciptakan."
+      },
+      {
+        "id": "oop-q2",
+        "question": "Apa arti dari parameter pertama \"self\" pada sebuah method class?",
+        "options": [
+          "Menunjuk ke instance objek itu sendiri yang sedang diproses",
+          "Nama pencipta bahasa Python",
+          "Menandakan bahwa fungsi bersifat rahasia"
+        ],
+        "answer": 0,
+        "explanation": "self mewakili objek itu sendiri sehingga method bisa mengakses dan memodifikasi atribut miliknya."
+      },
+      {
+        "id": "oop-q3",
+        "question": "Konsep di mana sebuah class anak mewarisi method dan atribut dari class induk disebut apa?",
+        "options": [
+          "Polymorphism",
+          "Inheritance (Pewarisan)",
+          "Encapsulation"
+        ],
+        "answer": 1,
+        "explanation": "Inheritance memungkinkan class turunan mewarisi seluruh sifat dan perilaku dari class induknya."
+      }
+    ],
+    "takeaways": [
+      "Class adalah cetakan biru; Object adalah benda nyata hasil cetakan.",
+      "Gunakan <code>__init__(self)</code> untuk mengatur nilai awal atribut objek.",
+      "Manfaatkan pewarisan (inheritance) agar tidak perlu mengulang-ulang kode yang sama."
+    ]
+  },
+  {
+    "slug": "venv-pip-dokumentasi",
+    "title": "Virtual Environment, pip, & Membaca Docs",
+    "level": 6,
+    "levelName": "Lebih serius",
+    "duration": 8,
+    "difficulty": "Gampang",
+    "description": "Menjaga kebersihan kamar ngoding dengan venv dan trik memasang pustaka dari seluruh dunia.",
+    "icon": "fa-folder-tree",
+    "pipiTip": "Satu proyek satu venv! Jangan campur aduk pustaka proyek website dengan proyek game ya.",
+    "funFact": "PyPI (Python Package Index) menyimpan lebih dari 500.000 paket pustaka open-source gratis untukmu!",
+    "analogy": {
+      "title": "Kamar kos terpisah dan toko swalayan pip",
+      "paragraphs": [
+        "Bayangkan kamu punya dua hobi: merajut benang wol dan melukis cat minyak. Kalau kamu menaruh cat minyak di atas tumpukan wol rajutanmu, benangmu bakal kotor dan rusak!",
+        "Virtual Environment (venv) itu seperti menyewa dua lemari terpisah: lemari Proyek A khusus cat, lemari Proyek B khusus benang. Lalu <code>pip</code> itu adalah kurir online yang mengantarkan paket barang apapun yang kamu pesan ke lemarimu!"
+      ]
+    },
+    "concept": {
+      "title": "Tiga Kunci Kedewasaan Programmer Python",
+      "lead": "Standar baku industri dalam mengelola dependensi proyek.",
+      "points": [
+        "<strong>Membuat Venv:</strong> Jalankan perintah <code>python -m venv .venv</code> di folder proyekmu.",
+        "<strong>Mengaktifkan Venv:</strong> Di Windows jalankan <code>.venv\\Scripts\\activate</code>, di Mac/Linux <code>source .venv/bin/activate</code>.",
+        "<strong>pip install nama_paket:</strong> Memasang pustaka dari PyPI (misal: <code>pip install requests</code>).",
+        "<strong>Membaca Dokumentasi:</strong> Buka situs resmi pustaka, baca bagian \"Quickstart\" pertama kali untuk contoh kode siap pakai."
+      ]
+    },
+    "codeExample": {
+      "filename": "perintah_terminal.sh",
+      "code": "# Langkah-langkah standar menyiapkan proyek Python profesional:\n\n# 1. Buat lingkungan virtual baru bernama .venv\npython -m venv .venv\n\n# 2. Aktifkan venv tersebut di Windows:\n.venv\\Scripts\\activate\n\n# 3. Pasang paket pendukung, misalnya requests untuk internet\npip install requests\n\n# 4. Simpan daftar belanjaan paket ke file teks\npip freeze > requirements.txt",
+      "highlight": [
+        4,
+        7,
+        10,
+        13
+      ],
+      "explanations": [
+        "Baris 4 membuat folder terisolasi <code>.venv</code> yang menyimpan salinan Python mandiri.",
+        "Baris 7 mengaktifkan lingkungan terisolasi tersebut (terminal akan memunculkan tanda <code>(.venv)</code>).",
+        "Baris 10 mengunduh pustaka secara lokal di dalam folder proyek saja tanpa mengotori sistem laptopmu.",
+        "Baris 13 mencatat versi paket agar teman timmu bisa menginstalnya dengan sekali klik."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Mengunggah Folder .venv ke Git / GitHub",
+      "text": "Folder <code>.venv</code> ukurannya sangat besar dan berisi file biner khusus komputermu. Jangan pernah mengunggahnya ke GitHub! Cukup unggah file <code>requirements.txt</code>, dan biarkan temanmu membuat venv mereka sendiri."
+    },
+    "practice": {
+      "instruction": "Bayangkan kamu mengaktifkan venv dan melihat versi pip di terminal komputermu!",
+      "code": "import sys\nprint(f\"Alamat Python yang aktif saat ini:\")\nprint(sys.executable)\nprint(\"Jika alamatnya mengarah ke folder .venv, selamat venv-mu aktif! 🌿\")"
+    },
+    "quizzes": [
+      {
+        "id": "venv-q1",
+        "question": "Apa tujuan utama membuat Virtual Environment (venv) untuk setiap proyek?",
+        "options": [
+          "Supaya baterai laptop tidak cepat habis",
+          "Mengisolasi pustaka dan versi paket agar tidak bertabrakan antar proyek",
+          "Mempercantik warna teks di VS Code"
+        ],
+        "answer": 1,
+        "explanation": "Venv mencegah konflik versi paket antara proyek yang berbeda di komputer yang sama."
+      },
+      {
+        "id": "venv-q2",
+        "question": "Perintah apa yang digunakan untuk memasang paket eksternal dari PyPI?",
+        "options": [
+          "python download nama_paket",
+          "pip install nama_paket",
+          "get package nama_paket"
+        ],
+        "answer": 1,
+        "explanation": "pip adalah package manager resmi Python; perintah untuk mengunduh adalah \"pip install\"."
+      },
+      {
+        "id": "venv-q3",
+        "question": "File apa yang biasanya digunakan untuk mencatat seluruh daftar pustaka proyek beserta versinya?",
+        "options": [
+          "requirements.txt",
+          "daftar_belanja.docx",
+          "packages.json"
+        ],
+        "answer": 0,
+        "explanation": "requirements.txt adalah nama file konvensi standar untuk mencatat dependensi proyek Python."
+      }
+    ],
+    "takeaways": [
+      "Selalu buat <code>venv</code> baru untuk setiap proyek ngoding baru.",
+      "Gunakan <code>pip install</code> untuk memasang paket dari PyPI.",
+      "Simpan dependensi di <code>requirements.txt</code> dan abaikan folder .venv di git."
+    ]
+  },
+  {
+    "slug": "testing-venv",
+    "title": "Pengujian Kode & Menjamin Program Sehat",
+    "level": 6,
+    "levelName": "Lebih serius",
+    "duration": 9,
+    "difficulty": "Lumayan",
+    "description": "Menulis dokter pribadi untuk kodemu: menguji fitur otomatis agar bebas rasa cemas saat rilis.",
+    "icon": "fa-vial-circle-check",
+    "pipiTip": "Ngoding tanpa testing itu kayak jalan di atas tali tanpa jaring pengaman. Pakai test, hati jadi tenang!",
+    "funFact": "Praktik menulis tes sebelum menulis fitur aslinya disebut TDD (Test-Driven Development)!",
+    "analogy": {
+      "title": "Tester rasa di pabrik cokelat",
+      "paragraphs": [
+        "Sebelum satu truk cokelat dikirim ke supermarket, selalu ada petugas pencicip yang menguji: apakah manisnya pas? Apakah bentuknya utuh? Apakah bungkusnya rapat?",
+        "Di dunia software, kamu tidak perlu mencicipi setiap tombol secara manual setiap hari. Kamu bisa menulis instruksi uji otomatis (unit test) yang mengecek ratusan fitur hanya dalam 1 detik!"
+      ]
+    },
+    "concept": {
+      "title": "Kekuatan Kata Kunci assert & Prinsip Testing",
+      "lead": "Bagaimana membuktikan bahwa fungsimu benar-benar bekerja sesuai janji.",
+      "points": [
+        "<strong>assert kondisi, \"pesan\":</strong> Mengecek apakah suatu kondisi bernilai True. Jika salah, Python otomatis melempar AssertionError.",
+        "<strong>Unit Test:</strong> Pengujian pada unit terkecil kode (biasanya satu buah fungsi spesifik).",
+        "<strong>Kasus Normal vs Kasus Ekstrem:</strong> Uji input wajar (misal harga 10000) dan input ekstrem (harga 0, harga minus, angka desimal)."
+      ]
+    },
+    "codeExample": {
+      "filename": "cek_kualitas.py",
+      "code": "# Fungsi yang ingin kita uji kualitasnya\ndef hitung_ongkir(berat_kg, jarak_km):\n    if berat_kg <= 0 or jarak_km <= 0:\n        return 0\n    return 10000 + (jarak_km * 2000)\n\n# Uji coba otomatis dengan assert\nprint(\"Memulai pemeriksaan kualitas...\")\n\nassert hitung_ongkir(1, 5) == 20000, \"Uji jarak 5km harusnya Rp20.000\"\nassert hitung_ongkir(0, 5) == 0,     \"Berat 0 harusnya gratis ongkir\"\nassert hitung_ongkir(2, 10) == 30000, \"Uji jarak 10km harusnya Rp30.000\"\n\nprint(\"✅ Semua tes lolos! Fungsi ongkir sehat walafiat.\")",
+      "highlight": [
+        2,
+        10,
+        11,
+        12
+      ],
+      "explanations": [
+        "Baris 2: fungsi yang bertugas menghitung biaya pengiriman paket.",
+        "Baris 10: <code>assert hitung_ongkir(1, 5) == 20000</code> membuktikan fungsi bekerja akurat.",
+        "Jika suatu saat ada teman kelompokmu yang tak sengaja merusak rumus, perintah assert akan langsung berteriak memberi peringatan!"
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Menguji Hanya Kasus Sukses",
+      "text": "Kesalahan paling sering adalah hanya mengetes saat pengguna memasukkan data yang benar. Jangan lupa uji juga saat pengguna memasukkan angka 0 atau angka negatif agar aplikasimu tidak kebingungan!"
+    },
+    "practice": {
+      "instruction": "Tulis assert sederhana untuk memeriksa apakah fungsi kuadrat menghasilkan angka yang benar!",
+      "code": "def kuadrat(x):\n    return x * x\n\nassert kuadrat(4) == 16, \"Harusnya 4 kuadrat adalah 16\"\nassert kuadrat(5) == 25, \"Harusnya 5 kuadrat adalah 25\"\nprint(\"Tes kuadrat berhasil 100%! ⭐\")"
+    },
+    "quizzes": [
+      {
+        "id": "test-q1",
+        "question": "Apa yang terjadi jika pernyataan assert di Python menerima kondisi yang bernilai False?",
+        "options": [
+          "Program tetap berjalan santai",
+          "Python memicu AssertionError dan menghentikan eksekusi",
+          "Laptop otomatis mati"
+        ],
+        "answer": 1,
+        "explanation": "Pernyataan assert akan memicu AssertionError jika ekspresi yang diuji bernilai False."
+      },
+      {
+        "id": "test-q2",
+        "question": "Apa sebutan untuk pengujian yang fokus pada satu fungsi kecil secara terisolasi?",
+        "options": [
+          "Unit Testing",
+          "Mega Testing",
+          "System Crashing"
+        ],
+        "answer": 0,
+        "explanation": "Unit testing adalah pengujian komponen terkecil dari perangkat lunak (biasanya sebuah fungsi)."
+      },
+      {
+        "id": "test-q3",
+        "question": "Kapan waktu terbaik menjalankan kumpulan tes kodemu?",
+        "options": [
+          "Hanya saat malam tahun baru",
+          "Setiap kali kamu selesai membuat atau mengubah fitur kode",
+          "Cukup sekali seumur hidup"
+        ],
+        "answer": 1,
+        "explanation": "Menjalankan tes secara berkala memastikan perubahan kode baru tidak merusak fitur-fitur lama (mencegah regresi)."
+      }
+    ],
+    "takeaways": [
+      "Gunakan <code>assert</code> untuk pengujian cepat kebenaran logika fungsi.",
+      "Uji kasus normal, batas ekstrem, dan potensi masukan tidak wajar.",
+      "Testing otomatis memberi rasa percaya diri tinggi saat ingin merilis kodemu."
+    ]
+  },
+  {
+    "slug": "decorator-generator",
+    "title": "Decorator dan Generator",
+    "level": 7,
+    "levelName": "Kode kompleks",
+    "duration": 10,
+    "difficulty": "Menantang",
+    "description": "Membungkus fungsi dengan pita kado (@decorator) dan menghasilkan data hemat memori (yield).",
+    "icon": "fa-wand-magic-sparkles",
+    "pipiTip": "Decorator itu kayak bando lucu di kepala kucing: fungsinya tetap kucing, tapi penampilannya jadi bertambah manis!",
+    "funFact": "Generator menggunakan kata kunci yield dan hanya menghitung data saat diminta (lazy evaluation), sehingga bisa memproses miliaran data tanpa membuat memori RAM penuh!",
+    "analogy": {
+      "title": "Kado berpita cantik dan keran air dispenser",
+      "paragraphs": [
+        "Bayangkan kamu punya kado kue cokelat. Kamu membungkusnya dengan kotak kado berpita pink dan memasang stiker wangi (<strong>Decorator</strong>). Kuenya tetap sama, tapi sekarang punya fitur tambahan sebelum dan sesudah dibuka!",
+        "Lalu apa itu <strong>Generator</strong>? Bayangkan kamu haus: alih-alih menampung seluruh air satu galon ke ember besar sekaligus (boros tempat), kamu cukup menekan tuas dispenser untuk mengeluarkan air satu gelas saat kamu butuh minum (<code>yield</code>)!"
+      ]
+    },
+    "concept": {
+      "title": "Dua Fitur Sakti Python Tingkat Lanjut",
+      "lead": "Bagaimana engineer senior mengoptimalkan kode mereka.",
+      "points": [
+        "<strong>Decorator (@nama):</strong> Fungsi yang menerima fungsi lain sebagai argumen dan memperluas perilakunya tanpa mengubah isi aslinya.",
+        "<strong>Generator (Fungsi dengan yield):</strong> Menghasilkan nilai satu per satu dan menangguhkan eksekusinya sampai diminta lagi oleh iterasi berikutnya.",
+        "<strong>Hemat Memori:</strong> Generator tidak menyimpan seluruh deret angka di RAM, sangat cocok untuk big data."
+      ]
+    },
+    "codeExample": {
+      "filename": "sakti_tingkat_lanjut.py",
+      "code": "import time\n\n# 1. Decorator pengukur kecepatan fungsi\ndef ukur_waktu(fungsi):\n    def pembungkus(*args, **kwargs):\n        awal = time.time()\n        hasil = fungsi(*args, **kwargs)\n        selesai = time.time()\n        print(f\"⏱️ Fungsi '{fungsi.__name__}' selesai dalam {(selesai-awal)*1000:.2f} ms\")\n        return hasil\n    return pembungkus\n\n# 2. Generator pencetak kupon jajan hemat memori\ndef buat_kupon(jumlah):\n    for i in range(1, jumlah + 1):\n        yield f\"KUPON-PIPI-{i:03d} 🎟️\"\n\n@ukur_waktu\ndef bagikan_hadiah():\n    kupon_stream = buat_kupon(3)\n    for k in kupon_stream:\n        print(f\"Ambil: {k}\")\n\nbagikan_hadiah()",
+      "highlight": [
+        4,
+        15,
+        19,
+        20
+      ],
+      "explanations": [
+        "Baris 4-11: <code>ukur_waktu</code> adalah decorator yang mencatat durasi eksekusi fungsi.",
+        "Baris 15: kata kunci <code>yield</code> mengubah fungsi biasa menjadi Generator.",
+        "Baris 19: simbol <code>@ukur_waktu</code> memasang pembungkus ke fungsi <code>bagikan_hadiah</code> secara instan."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Mengira yield Menghentikan Fungsi Selamanya",
+      "text": "Berbeda dengan <code>return</code> yang menyelesaikan fungsi secara permanen, <code>yield</code> hanya \"menjeda sejenak\" (pause) dan menyimpan status fungsi di memori hingga putaran berikutnya memanggil <code>next()</code>."
+    },
+    "practice": {
+      "instruction": "Buat generator angka kelipatan 5 yang menghasilkan 3 angka pertama dengan yield!",
+      "code": "def kelipatan_lima():\n    yield 5\n    yield 10\n    yield 15\n\nfor nilai in kelipatan_lima():\n    print(f\"Angka: {nilai} ✨\")"
+    },
+    "quizzes": [
+      {
+        "id": "dec-q1",
+        "question": "Simbol apa yang digunakan di atas nama fungsi untuk memasang sebuah Decorator di Python?",
+        "options": [
+          "#",
+          "@",
+          "$"
+        ],
+        "answer": 1,
+        "explanation": "Simbol @ (at-sign) diletakkan tepat di atas deklarasi fungsi untuk menerapkan decorator."
+      },
+      {
+        "id": "dec-q2",
+        "question": "Kata kunci apa yang membedakan fungsi Generator dari fungsi biasa?",
+        "options": [
+          "return",
+          "yield",
+          "produce"
+        ],
+        "answer": 1,
+        "explanation": "Fungsi yang memuat kata kunci yield otomatis menjadi fungsi generator di Python."
+      },
+      {
+        "id": "dec-q3",
+        "question": "Apa keunggulan utama menggunakan generator untuk memproses data yang sangat besar?",
+        "options": [
+          "Data langsung otomatis terkirim ke email",
+          "Sangat hemat memori karena data diproduksi satu per satu saat dibutuhkan",
+          "Tidak memerlukan koneksi listrik"
+        ],
+        "answer": 1,
+        "explanation": "Generator bersifat lazy evaluation, hanya mengalokasikan memori untuk satu item aktif pada satu waktu."
+      }
+    ],
+    "takeaways": [
+      "Gunakan decorator (<code>@</code>) untuk menambahkan fitur logging, timing, atau autentikasi.",
+      "Gunakan generator (<code>yield</code>) saat memproses antrean data besar agar hemat RAM.",
+      "Generator mengingat posisi jeda terakhirnya untuk melanjutkan di panggilan berikutnya."
+    ]
+  },
+  {
+    "slug": "context-manager-type-hints",
+    "title": "Context Manager & Type Hints",
+    "level": 7,
+    "levelName": "Kode kompleks",
+    "duration": 9,
+    "difficulty": "Lumayan",
+    "description": "Menulis kode profesional yang aman dengan pintu with dan petunjuk tipe data yang jelas.",
+    "icon": "fa-signature",
+    "pipiTip": "Type hints itu seperti label komposisi di kemasan skincare: memberi tahu editor jenis data apa yang diharapkan!",
+    "funFact": "Type hints di Python bersifat opsional dan tidak mengubah cara kerja runtime, tapi sangat disukai oleh editor VS Code untuk autocomplete super pintar!",
+    "analogy": {
+      "title": "Pintu otomatis swalayan dan papan petunjuk jalan",
+      "paragraphs": [
+        "Pernah masuk minimarket dengan pintu sensor otomatis? Begitu kamu mendekat pintunya terbuka, dan saat kamu sudah lewat pintunya tertutup rapat sendiri. Itulah cara kerja <strong>Context Manager</strong> (<code>with</code>): membuka saat masuk, membersihkan saat keluar.",
+        "Lalu <strong>Type Hints</strong> itu seperti plang petunjuk jalan di bandara: \"Jalur Koper Khusus Ukuran Sedang\". Membantu kamu dan teman satu timmu tahu persis tipe data apa yang harus disiapkan tanpa perlu saling tanya."
+      ]
+    },
+    "concept": {
+      "title": "Standar Kode Perusahaan Modern",
+      "lead": "Bagaimana membuat kode yang mudah dipahami rekan kerja dan minim bug.",
+      "points": [
+        "<strong>Type Hints Variabel:</strong> <code>nama: str = \"Pipi\"</code> dan <code>umur: int = 1</code>.",
+        "<strong>Type Hints Fungsi:</strong> <code>def hitung(a: int, b: int) -&gt; int:</code> menunjukkan tipe masukan dan tipe kembalian.",
+        "<strong>Custom Context Manager:</strong> Dibuat dengan modul <code>contextlib.contextmanager</code> atau class dengan metode <code>__enter__</code> dan <code>__exit__</code>."
+      ]
+    },
+    "codeExample": {
+      "filename": "kode_profesional.py",
+      "code": "from contextlib import contextmanager\n\n# 1. Custom Context Manager untuk menghias sesi ngoding\n@contextmanager\ndef sesi_ngoding(nama_sesi: str):\n    print(f\"🌸 Memulai sesi: {nama_sesi} (Lampu belajar ON)\")\n    try:\n        yield\n    finally:\n        print(f\"🌸 Sesi {nama_sesi} selesai! (Lampu belajar OFF)\\n\")\n\n# 2. Fungsi dengan Type Hints lengkap\ndef format_struk(item: str, harga: float, jumlah: int) -> str:\n    total: float = harga * jumlah\n    return f\"{item} x{jumlah} = Rp{total:,.0f}\"\n\nwith sesi_ngoding(\"Belajar Python Bareng Pipi\"):\n    pesan: str = format_struk(\"Mochi Matcha\", 12500.0, 3)\n    print(f\"Hasil: {pesan}\")",
+      "highlight": [
+        4,
+        7,
+        13,
+        14,
+        17
+      ],
+      "explanations": [
+        "Baris 4-10: <code>@contextmanager</code> memungkinkan kita membuat blok <code>with</code> kustom yang otomatis mengeksekusi bagian pembuka dan penutup.",
+        "Baris 13: <code>item: str, harga: float, jumlah: int -&gt; str</code> adalah type hints yang sangat memperjelas kontrak fungsi.",
+        "Baris 17: pemanggilan menggunakan blok <code>with</code> menjamin pesan penutup selalu dicetak."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Mengira Type Hints Memblokir Tipe Lain di Runtime",
+      "text": "Python tidak akan membatalkan program jika kamu memasukkan angka ke parameter bertipe <code>str</code>. Type hints hanyalah petunjuk untuk linter dan editor. Untuk pemeriksaan ketat, gunakan alat bantu seperti <code>mypy</code>!"
+    },
+    "practice": {
+      "instruction": "Lengkapi fungsi sapaan di bawah dengan type hints yang tepat!",
+      "code": "def sapa_pengguna(nama: str, poin: int) -> str:\n    return f\"Halo {nama}, kamu mengumpulkan {poin} bintang! ⭐\"\n\nprint(sapa_pengguna(\"Nabila\", 150))"
+    },
+    "quizzes": [
+      {
+        "id": "type-q1",
+        "question": "Bagaimana cara menuliskan type hint bahwa fungsi mengembalikan nilai bertipe boolean?",
+        "options": [
+          "def cek() returns bool:",
+          "def cek() -> bool:",
+          "def cek() : bool"
+        ],
+        "answer": 1,
+        "explanation": "Di Python, tanda panah -> sebelum tanda titik dua digunakan untuk menandai tipe nilai kembalian fungsi."
+      },
+      {
+        "id": "type-q2",
+        "question": "Metode dunder (double underscore) apa yang wajib dimiliki sebuah class agar bisa digunakan pada pernyataan \"with\"?",
+        "options": [
+          "__start__ dan __stop__",
+          "__enter__ dan __exit__",
+          "__open__ dan __close__"
+        ],
+        "answer": 1,
+        "explanation": "Protokol context manager di Python diatur oleh sepasang metode __enter__ dan __exit__."
+      },
+      {
+        "id": "type-q3",
+        "question": "Apa manfaat terbesar menuliskan type hints pada proyek tim?",
+        "options": [
+          "Membuat ukuran file Python menjadi lebih kecil",
+          "Editor bisa memberi saran autocomplete yang presisi dan mencegah salah tipe data",
+          "Mempercepat kecepatan download internet"
+        ],
+        "answer": 1,
+        "explanation": "Type hints mempermudah proses code review, debugging, dan integrasi fitur autocomplete di editor modern."
+      }
+    ],
+    "takeaways": [
+      "Gunakan type hints (<code>: tipe</code> dan <code>-&gt; tipe</code>) agar kodemu mudah dipahami.",
+      "Gunakan context manager (<code>with</code>) untuk mengelola sumber daya yang perlu dibuka dan ditutup.",
+      "Modul <code>contextlib</code> mempermudah pembuatan context manager berbasis generator."
+    ]
+  },
+  {
+    "slug": "regex-json",
+    "title": "Regex Dasar & Mengolah JSON",
+    "level": 7,
+    "levelName": "Kode kompleks",
+    "duration": 9,
+    "difficulty": "Menantang",
+    "description": "Mencocokkan pola teks (regex) dan bertukar data antar server di internet menggunakan JSON.",
+    "icon": "fa-code-compare",
+    "pipiTip": "JSON itu kayak paspor internasional data: semua bahasa pemrograman di dunia bisa membaca JSON!",
+    "funFact": "Sintaks JSON sangat mirip dengan Dictionary di Python, hanya saja di JSON nilai boolean ditulis dengan huruf kecil (true/false)!",
+    "analogy": {
+      "title": "Detektif pola sidik jari dan paket parsel pos",
+      "paragraphs": [
+        "Bayangkan kamu punya tumpukan surat dan ingin mencari amplop yang ada nomor teleponnya. Polanya jelas: angka-angka dengan strip pemisah. <strong>Regex (Regular Expressions)</strong> adalah kaca pembesar detektif yang bisa mencocokkan pola tersebut dalam sekejap!",
+        "Lalu apa itu <strong>JSON</strong>? Bayangkan kamu mengirim paket kue ke teman di luar negeri. Supaya kurir dan penerima paham isinya tanpa salah tafsir, kamu menempel label standar internasional dengan daftar bahan dan penerimanya."
+      ]
+    },
+    "concept": {
+      "title": "Dua Keahlian Wajib Web Developer",
+      "lead": "Validasi ketikan formulir dan format pertukaran data standar internet.",
+      "points": [
+        "<strong>Modul re (Regex):</strong> <code>re.search()</code> mencari pola, <code>\\d+</code> untuk angka, <code>[a-zA-Z]</code> untuk huruf.",
+        "<strong>json.dumps(obj):</strong> Mengubah dictionary Python menjadi teks string JSON (sering dikirim ke web/API).",
+        "<strong>json.loads(teks):</strong> Mengubah teks JSON dari internet kembali menjadi Dictionary Python yang ramah diakses.",
+        "<strong>ensure_ascii=False:</strong> Menjaga agar karakter khusus dan emoji tidak diubah menjadi kode escape."
+      ]
+    },
+    "codeExample": {
+      "filename": "web_data.py",
+      "code": "import re\nimport json\n\n# 1. Regex: memeriksa apakah format username hanya huruf & angka kawaii\nusername_input = \"pipi_cute2026\"\npola_valid = r\"^[a-zA-Z0-9_]{4,15}$\"\n\nif re.match(pola_valid, username_input):\n    print(f\"✅ Username '{username_input}' valid dan cantik!\")\nelse:\n    print(\"❌ Username tidak sesuai aturan.\")\n\n# 2. JSON: mengubah data profil kucing menjadi teks JSON\nprofil_kucing = {\n    \"nama\": \"Boba\",\n    \"umur\": 3,\n    \"hobi\": [\"makan snack\", \"tidur di kardus\"],\n    \"aktif\": True\n}\n\nteks_json = json.dumps(profil_kucing, indent=2, ensure_ascii=False)\nprint(\"\\nData JSON siap kirim:\")\nprint(teks_json)\n\n# Membaca kembali teks JSON ke dictionary Python\ndata_kembali = json.loads(teks_json)\nprint(f\"\\nHobi pertama Boba: {data_kembali['hobi'][0]} 🐾\")",
+      "highlight": [
+        6,
+        8,
+        20,
+        25
+      ],
+      "explanations": [
+        "Baris 6: pola regex <code>r\"^[a-zA-Z0-9_]{4,15}$\"</code> memastikan panjangnya 4-15 karakter huruf, angka, atau underscore.",
+        "Baris 8: <code>re.match()</code> mencocokkan pola sejak karakter pertama string.",
+        "Baris 20: <code>json.dumps()</code> mengonversi dictionary menjadi teks JSON dengan indentasi rapi 2 spasi.",
+        "Baris 25: <code>json.loads()</code> mem-parsing teks JSON kembali menjadi Dictionary Python."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Beda dumps (dengan S) dan dump (tanpa S)",
+      "text": "Ingat kuncinya: <code>json.dumps()</code> (ada huruf s = String) dipakai untuk mengubah ke teks string di memori. Sedangkan <code>json.dump()</code> (tanpa s) dipakai untuk langsung menulis ke objek file disk!"
+    },
+    "practice": {
+      "instruction": "Ubah teks JSON berikut menjadi dictionary Python dan cetak nama camilannya!",
+      "code": "import json\ndata_teks = '{\"camilan\": \"Mochi Strawberry\", \"harga\": 15000}'\nkamus = json.loads(data_teks)\nprint(f\"Camilan: {kamus['camilan']} seharga Rp{kamus['harga']:,} 🍓\")"
+    },
+    "quizzes": [
+      {
+        "id": "json-q1",
+        "question": "Fungsi manakah yang digunakan untuk mem-parsing teks JSON menjadi dictionary di Python?",
+        "options": [
+          "json.stringify()",
+          "json.loads()",
+          "json.to_dict()"
+        ],
+        "answer": 1,
+        "explanation": "Fungsi json.loads() (load string) mengonversi teks berformat JSON menjadi objek Python."
+      },
+      {
+        "id": "json-q2",
+        "question": "Dalam pola Regex, simbol \\d merepresentasikan karakter apa?",
+        "options": [
+          "Sembarang huruf alfabet",
+          "Karakter digit angka (0-9)",
+          "Tanda baca titik"
+        ],
+        "answer": 1,
+        "explanation": "Simbol escape \\d adalah singkatan dari digit (angka 0 sampai 9)."
+      },
+      {
+        "id": "json-q3",
+        "question": "Mengapa huruf 'r' sering diletakkan di depan pola regex seperti r\"\\d+\"?",
+        "options": [
+          "Menandakan raw string agar tanda backslash (\\) tidak dianggap karakter escape khusus",
+          "Menandakan string berwarna merah (red)",
+          "Membuat pencarian berjalan mundur (reverse)"
+        ],
+        "answer": 0,
+        "explanation": "Awalan huruf r menandakan Raw String sehingga backslash diproses secara literal oleh mesin regex."
+      }
+    ],
+    "takeaways": [
+      "Gunakan modul <code>re</code> untuk mencocokkan pola teks formulir.",
+      "Gunakan <code>json.loads()</code> untuk membaca dan <code>json.dumps()</code> untuk menulis JSON.",
+      "Gunakan raw string (<code>r\"...\"</code>) saat menyusun ekspresi regex."
+    ]
+  },
+  {
+    "slug": "pytest-async-struktur",
+    "title": "pytest, Async Dasar, & Struktur Proyek Rapi",
+    "level": 7,
+    "levelName": "Kode kompleks",
+    "duration": 10,
+    "difficulty": "Menantang",
+    "description": "Menyusun arsitektur folder proyek standar dunia industri, pengujian pytest, dan tugas paralel async.",
+    "icon": "fa-diagram-project",
+    "pipiTip": "Struktur folder yang rapi bikin calon rekan kerja atau interviewer langsung jatuh cinta sama kodemu!",
+    "funFact": "Framework pytest otomatis menemukan semua file yang diawali test_ tanpa kamu perlu mendaftarkannya satu per satu!",
+    "analogy": {
+      "title": "Pantry dapur bintang lima dan oven timer cerdas",
+      "paragraphs": [
+        "Bayangkan dapur restoran bintang lima: bumbu di rak bumbu, bahan segar di chiller, piring bersih di lemari atas. Itulah <strong>Struktur Proyek Rapi</strong> (ada folder <code>src/</code>, <code>tests/</code>, dan <code>README.md</code>).",
+        "Lalu apa itu <strong>Async</strong>? Bayangkan kamu memanggang kue: setelah adonan masuk oven, kamu tidak berdiri mematung menatap pintu oven selama 30 menit! Kamu bisa sambil mencuci mangkuk dan menyiapkan whipped cream (<code>await</code>)."
+      ]
+    },
+    "concept": {
+      "title": "Tiga Keterampilan Developer Python Profesional",
+      "lead": "Bagaimana membangun aplikasi berskala besar yang siap dipelihara bertahun-tahun.",
+      "points": [
+        "<strong>Struktur Proyek:</strong> Folder <code>src/</code> untuk logika inti, <code>tests/</code> untuk pengujian, <code>README.md</code> sebagai petunjuk.",
+        "<strong>pytest:</strong> Framework pengujian paling populer, cukup buat file <code>test_fitur.py</code> dengan fungsi <code>test_...()</code>.",
+        "<strong>async / await:</strong> Menjalankan tugas yang memerlukan waktu tunggu I/O (seperti download internet) tanpa memblokir program utama.",
+        "<strong>asyncio.run():</strong> Pintu masuk utama untuk mengeksekusi coroutine async di Python modern."
+      ]
+    },
+    "codeExample": {
+      "filename": "arsitektur_modern.py",
+      "code": "import asyncio\n\n# Contoh 1: Fungsi async (memasak sambil menyiapkan meja)\nasync def panggang_kue(nama: str, waktu_detik: int):\n    print(f\"🧁 [1/2] Memasukkan adonan {nama} ke oven...\")\n    await asyncio.sleep(waktu_detik)  # simulasi menunggu tanpa macet\n    print(f\"✨ [2/2] Ting! Kue {nama} matang sempurna!\")\n    return f\"{nama} hangat\"\n\nasync def kegiatan_dapur():\n    # Menjalankan dua tugas oven secara bersamaan\n    hasil = await asyncio.gather(\n        panggang_kue(\"Croissant\", 1),\n        panggang_kue(\"Muffin Cokelat\", 1)\n    )\n    print(f\"Siap saji: {hasil}\")\n\n# Menjalankan event loop\nasyncio.run(kegiatan_dapur())",
+      "highlight": [
+        4,
+        6,
+        12,
+        19
+      ],
+      "explanations": [
+        "Baris 4: <code>async def</code> menandai fungsi sebagai coroutine yang bisa ditangguhkan.",
+        "Baris 6: <code>await asyncio.sleep()</code> menunggu tanpa membuat komputer macet total (non-blocking).",
+        "Baris 12: <code>asyncio.gather()</code> menjalankan beberapa tugas secara paralel sekaligus.",
+        "Baris 19: <code>asyncio.run()</code> menjalankan fungsi async dari tingkat utama."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Lupa Kata Kunci await pada Fungsi Async",
+      "text": "Jika kamu memanggil fungsi async tanpa kata kunci <code>await</code> di depannya, fungsinya tidak akan langsung dieksekusi dan Python akan memunculkan peringatan <code>RuntimeWarning: coroutine was never awaited</code>!"
+    },
+    "practice": {
+      "instruction": "Jalankan simulasi async menyeduh teh boba berikut!",
+      "code": "import asyncio\n\nasync def seduh_teh():\n    print(\"Mulai menyeduh teh melati... 🍵\")\n    await asyncio.sleep(0.5)\n    print(\"Aroma teh sudah harum semerbak! ✨\")\n\nasyncio.run(seduh_teh())"
+    },
+    "quizzes": [
+      {
+        "id": "arch-q1",
+        "question": "Bagaimana penamaan fungsi yang otomatis dikenali oleh pytest untuk dijalankan sebagai tes?",
+        "options": [
+          "Diawali dengan kata test_ (misal: test_hitung)",
+          "Diawali dengan run_test_",
+          "Harus diakhiri kata _ok"
+        ],
+        "answer": 0,
+        "explanation": "pytest secara konvensi mencari fungsi yang diawali dengan kata \"test_\" di dalam file \"test_*.py\"."
+      },
+      {
+        "id": "arch-q2",
+        "question": "Kata kunci apa yang digunakan untuk memanggil fungsi async dan menunggu hasilnya selesai?",
+        "options": [
+          "wait",
+          "await",
+          "pause"
+        ],
+        "answer": 1,
+        "explanation": "Kata kunci \"await\" digunakan untuk menunggu selesainya eksekusi sebuah coroutine async."
+      },
+      {
+        "id": "arch-q3",
+        "question": "Di dalam struktur proyek Python yang rapi, folder apa yang biasanya menampung kode sumber utama aplikasi?",
+        "options": [
+          "bin/",
+          "src/",
+          "temp/"
+        ],
+        "answer": 1,
+        "explanation": "Folder src/ (source) adalah konvensi standar industri untuk menampung kode utama aplikasi."
+      }
+    ],
+    "takeaways": [
+      "Gunakan struktur folder <code>src/</code> dan <code>tests/</code> untuk kerapian proyek.",
+      "Gunakan <code>pytest</code> untuk pengujian otomatis yang elegan.",
+      "Gunakan <code>async</code> dan <code>await</code> untuk proses I/O yang efisien."
+    ]
+  },
+  {
+    "slug": "proyek-api",
+    "title": "Proyek Akhir & Integrasi API",
+    "level": 7,
+    "levelName": "Kode kompleks",
+    "duration": 12,
+    "difficulty": "Menantang",
+    "description": "Puncak petualanganmu: mengambil data cuaca dari internet dan memilih 4 ide mini project siap banggakan!",
+    "icon": "fa-trophy",
+    "pipiTip": "Selamat kamu sudah sampai di garis akhir kurikulum! Pipi bangga banget sama perjuangan dan ketekunanmu 🎓🐍✨",
+    "funFact": "API (Application Programming Interface) adalah jembatan digital yang menghubungkan jutaan aplikasi di seluruh dunia agar bisa saling bertukar informasi!",
+    "analogy": {
+      "title": "Restoran drive-thru dan panggung wisuda kelulusan",
+      "paragraphs": [
+        "Bayangkan kamu lapar di tengah malam dan datang ke drive-thru. Kamu tidak perlu masuk ke dapur restoran atau melihat koki memasak. Kamu cukup bicara ke mikrofon pemesanan (<strong>API Endpoint</strong>), membayar, dan makanan hangat diserahkan ke tanganmu lewat jendela (<strong>Response JSON</strong>).",
+        "Hari ini adalah panggung wisuda kecilmu di PyPink Academy! Semua ilmu dari Level 1 (print) sampai Level 7 (arsitektur dan API) sekarang siap kamu satukan menjadi proyek nyata yang bisa kamu tunjukkan ke teman, guru, atau calon perekrut."
+      ]
+    },
+    "concept": {
+      "title": "Menghubungkan Python ke Dunia Luar via HTTP",
+      "lead": "Cara mengambil data real-time dari internet dan 4 inspirasi proyek penutup.",
+      "points": [
+        "<strong>HTTP Request:</strong> Mengirim permintaan <code>GET</code> ke alamat URL server untuk mengambil data terbaru.",
+        "<strong>Parsing Response:</strong> Server biasanya membalas dalam format teks JSON yang langsung kita ubah jadi Dictionary.",
+        "<strong>Status Code 200:</strong> Tanda bahwa permintaan berhasil diterima dan dijawab dengan sukses.",
+        "<strong>4 Pilihan Mini Project Akhir:</strong> (1) To-Do List CLI estetik, (2) Kalkulator jajan & promo, (3) Game tebak angka misteri, (4) Pencatat keuangan santai."
+      ]
+    },
+    "codeExample": {
+      "filename": "ambil_data_web.py",
+      "code": "import json\nimport urllib.request\n\ndef ambil_cuaca_santai(kota: str = \"Jakarta\"):\n    \"\"\"Mengambil simulasi data ramalan cuaca via API.\"\"\"\n    print(f\"🌐 Menghubungi satelit cuaca untuk kota {kota}...\")\n    \n    # Contoh struktur data kembalian API cuaca modern\n    simulasi_respon_api = \"\"\"{\n        \"status\": 200,\n        \"kota\": \"Jakarta\",\n        \"cuaca\": \"Cerah Berawan ⛅\",\n        \"suhu_celsius\": 28.5,\n        \"saran_pipi\": \"Waktu yang tepat buat jalan santai sambil beli es kopi!\"\n    }\"\"\"\n    \n    data = json.loads(simulasi_respon_api)\n    return data\n\nhasil = ambil_cuaca_santai(\"Bandung\")\nprint(f\"Status Server: {hasil['status']} OK\")\nprint(f\"Kondisi Cuaca : {hasil['cuaca']}\")\nprint(f\"Suhu Udara    : {hasil['suhu_celsius']} °C\")\nprint(f\"Pesan Pipi    : {hasil['saran_pipi']} ✨\")",
+      "highlight": [
+        10,
+        18,
+        22,
+        25
+      ],
+      "explanations": [
+        "Baris 10: data dari internet biasanya berupa string JSON terstruktur.",
+        "Baris 18: <code>json.loads()</code> membedah string JSON menjadi dictionary Python dalam hitungan milidetik.",
+        "Baris 22-25: mengekstrak informasi spesifik dari dictionary untuk ditampilkan ke pengguna dengan sopan."
+      ]
+    },
+    "trap": {
+      "title": "Awas Jebakan: Mengabaikan Timeout & Error Jaringan",
+      "text": "Di dunia nyata, koneksi internet pengguna bisa putus atau server tujuan sedang down. Selalu bungkus pemanggilan HTTP request di dalam blok <code>try-except</code> dengan penanganan error timeout agar aplikasimu tidak membeku!"
+    },
+    "practice": {
+      "instruction": "Pilih satu ide mini project akhirmu dan cetak nama proyek yang ingin kamu buat pertama kali!",
+      "code": "proyek_pilihan = \"To-Do List CLI Estetik dengan Simpanan File JSON\"\nprint(f\"Proyek akhir yang akan kubuat: {proyek_pilihan} 🚀\")\nprint(\"Pipi siap mendampingi proses ngodingmu sampai tuntas! 💖\")"
+    },
+    "quizzes": [
+      {
+        "id": "api-q1",
+        "question": "Metode HTTP apa yang paling umum digunakan untuk mengambil (mengunduh) data dari sebuah API?",
+        "options": [
+          "POST",
+          "GET",
+          "DELETE"
+        ],
+        "answer": 1,
+        "explanation": "Metode HTTP GET digunakan secara standar untuk meminta dan membaca data dari server."
+      },
+      {
+        "id": "api-q2",
+        "question": "Berapa angka HTTP status code yang menandakan permintaan berhasil dengan sukses?",
+        "options": [
+          "200",
+          "404",
+          "500"
+        ],
+        "answer": 0,
+        "explanation": "Status code 200 OK adalah standar universal bahwa permintaan berhasil diproses."
+      },
+      {
+        "id": "api-q3",
+        "question": "Apa langkah selanjutnya setelah kamu menyelesaikan kurikulum 7 level di PyPink Academy?",
+        "options": [
+          "Berhenti ngoding selamanya",
+          "Membangun proyek portofolio sendiri dan terus mengeksplorasi ide kreatif",
+          "Menghapus Python dari laptop"
+        ],
+        "answer": 1,
+        "explanation": "Kunci menjadi programmer handal adalah mempraktikkan ilmu dengan terus berkarya dan membuat proyek nyata!"
+      }
+    ],
+    "takeaways": [
+      "API menghubungkan kodemu dengan layanan luar seperti cuaca, peta, dan AI.",
+      "Gunakan <code>json.loads()</code> untuk memproses data balasan server.",
+      "Selamat! Kamu telah menguasai dasar hingga tingkat lanjut Python bersama Pipi! 🎓✨"
+    ]
+  }
+]

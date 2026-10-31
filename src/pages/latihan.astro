@@ -1,0 +1,7 @@
+﻿---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import QuizCard from '../components/QuizCard.astro';
+import quizzes from '../data/quizzes.json';
+const names=['','Kenalan dulu','Dasar-dasar','Alur program','Struktur data','Fungsi & modul','Lebih serius','Kode kompleks'];
+---
+<BaseLayout title="Latihan Python â€” PyPink Academy" description="Latihan Python interaktif dari dasar sampai topik lanjut."><main class="wrap"><header class="page-intro"><span class="eyebrow">Otot logika, pemanasan!</span><h1 class="page-title">Latihan Python</h1><p class="lead">14 soal pendek, dikelompokkan sesuai level. Setiap jawaban langsung mendapat penjelasan dari Pipi.</p><div class="score-card card"><span>Skor kamu</span><strong data-quiz-score>0 / 0</strong><span data-score-message>Pilih jawaban untuk mulai mengumpulkan bintang.</span></div></header>{names.slice(1).map((name,index)=><section class="quiz-level"><div class="level-heading"><span class="icon-tile">{['ðŸŒ±','ðŸ§ƒ','ðŸ§ ','ðŸ§º','ðŸ§','ðŸ› ï¸','ðŸš€'][index]}</span><div><span class="eyebrow">LEVEL {index+1}</span><h2 style="font-size:1.7rem;margin:7px 0 0">{name}</h2></div></div><div class="grid quiz-grid">{quizzes.filter(quiz=>quiz.level===index+1).map((quiz,quizIndex)=><QuizCard question={quiz.question} options={quiz.options} answer={quiz.answer} explanation={quiz.explanation} id={`level-${index+1}-quiz-${quizIndex+1}`}/>)}</div></section>)}</main></BaseLayout>

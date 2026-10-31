@@ -1,0 +1,5 @@
+---
+const { question, options, answer, explanation, id = 'kuis' } = Astro.props;
+import Pipi from './MascotPipi.astro';
+---
+<section class="quiz" data-quiz data-explanation={explanation} aria-labelledby={`${id}-question`}><h3 id={`${id}-question`}>{question}</h3>{options.map((option, index)=><button class="quiz-option" data-answer={index===answer?'true':'false'} data-option-label={String.fromCharCode(65+index)}>{option}</button>)}<div class="quiz-response"><Pipi class="quiz-pipi quiz-pipi-happy" mood="celebrate"/><Pipi class="quiz-pipi quiz-pipi-thinking" mood="thinking"/><p class="quiz-feedback" aria-live="polite"></p></div></section>

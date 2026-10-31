@@ -1,0 +1,1 @@
+const completed=JSON.parse(localStorage.getItem('pypink-progress')||'{}');document.querySelectorAll('[data-progress-bar]').forEach(bar=>{const total=Number(bar.dataset.total)||1;const done=Object.keys(completed).length;bar.style.width=`${Math.min(100,done/total*100)}%`});

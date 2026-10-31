@@ -1,0 +1,19 @@
+:root[data-theme='dark'] {
+  color-scheme:dark;
+  --bg:#1b1130;
+  --surface:#26183f;
+  --surface-2:#33204e;
+  --text:#f8efff;
+  --muted:#d1c2df;
+  --line:#d8b4fe;
+  --shadow-sm:3px 3px 0 #60477a;
+  --shadow-md:5px 5px 0 #60477a;
+  --shadow-lg:8px 8px 0 #60477a
+}
+:focus-visible {
+  outline:3px solid #b21e62;
+  outline-offset:3px
+}
+:root[data-theme="dark"] :focus-visible {
+  outline-color:#fde68a
+}

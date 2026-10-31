@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pypink.academy/sitemap.xml

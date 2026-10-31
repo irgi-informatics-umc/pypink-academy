@@ -1,0 +1,1 @@
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&window.gsap){gsap.from('.hero-copy > *',{y:18,opacity:0,duration:.7,stagger:.1,ease:'power2.out'});if(window.ScrollTrigger){gsap.utils.toArray('.feature-card,.level-card,.stat').forEach(el=>gsap.from(el,{scrollTrigger:{trigger:el,start:'top 90%'},y:18,opacity:0,duration:.45,ease:'power2.out'}))}}

@@ -1,0 +1,7 @@
+---
+import LessonLayout from '../../layouts/LessonLayout.astro';
+import lessons from '../../data/lessons.json';
+export function getStaticPaths(){return lessons.map((lesson,index)=>({params:{slug:lesson.slug},props:{lesson,previous:lessons[index-1],next:lessons[index+1]}}))}
+const {lesson,previous,next}=Astro.props;
+---
+<LessonLayout lesson={lesson} previous={previous} next={next}/>

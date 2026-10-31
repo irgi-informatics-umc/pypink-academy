@@ -1,0 +1,164 @@
+﻿---
+import BaseLayout from './BaseLayout.astro';
+import CodeBlock from '../components/CodeBlock.astro';
+import QuizCard from '../components/QuizCard.astro';
+import Callout from '../components/Callout.astro';
+import Icon from '../components/Icon.astro';
+import lessons from '../data/lessons.json';
+
+const { lesson, previous, next } = Astro.props;
+---
+<BaseLayout title={`${lesson.title} â€” PyPink Academy`} description={lesson.description}>
+  <main class="wrap lesson-layout" data-lesson-id={lesson.slug} data-lesson-slug={lesson.slug} data-lesson-level={lesson.level}>
+    <div class="reading-progress" aria-hidden="true"><div data-reading-progress></div></div>
+    <nav class="lesson-chips" aria-label="Bagian materi">
+      <a href="#analogi">Mulai dulu</a><a href="#konsep">Konsep</a><a href="#contoh">Kode</a><a href="#jebakan">Jebakan</a><a href="#latihan">Latihan</a><a href="#quiz">Kuis</a><a href="#ringkasan">Ringkasan</a>
+    </nav>
+    <article class="lesson-main">
+      <a class="text-link" href="/belajar/">â† Kembali ke peta belajar</a>
+      
+      <header class="page-intro">
+        <span class="eyebrow sticker">Level {lesson.level} Â· {lesson.levelName}</span>
+        <h1 class="page-title">{lesson.title}</h1>
+        <p class="lead">{lesson.description}</p>
+        <div class="lesson-meta">
+          <span class="pill"><Icon name="clock" size={15}/> {lesson.duration} menit</span>
+          <span class="pill">{lesson.difficulty === 'Gampang' ? 'â­' : lesson.difficulty === 'Lumayan' ? 'â­â­' : 'â­â­â­'} {lesson.difficulty}</span>
+          <span class="pill" data-status>Belum mulai</span>
+        </div>
+      </header>
+
+      <div class="lesson-progress">
+        <div class="progress-track" role="progressbar" aria-label="Progres seluruh kurikulum" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-fill" data-progress-bar data-level="all" data-total={lessons.length}></div>
+        </div>
+      </div>
+      <p><small>Progres belajarmu tersimpan otomatis di perangkat ini.</small></p>
+
+      {lesson.pipiTip && (
+        <Callout title="Tips dari Pipi">{lesson.pipiTip}</Callout>
+      )}
+      {lesson.funFact && <Callout type="fact" title="Fun fact dari Pipi">{lesson.funFact}</Callout>}
+
+      <!-- (a) Intro Analogi Sehari-hari -->
+      <h2 id="analogi">{lesson.analogy ? lesson.analogy.title : 'Mulai dengan Analogi Sehari-hari'}</h2>
+      {lesson.analogy && lesson.analogy.paragraphs ? (
+        lesson.analogy.paragraphs.map((p) => <p set:html={p} />)
+      ) : (
+        <p>Mari kita bayangkan konsep ini dalam kehidupan sehari-hari agar lebih mudah dipahami.</p>
+      )}
+
+      <!-- (b) Konsep Inti -->
+      <h2 id="konsep">{lesson.concept ? lesson.concept.title : 'Konsep Inti'}</h2>
+      {lesson.concept && lesson.concept.lead && <p class="lead" set:html={lesson.concept.lead} />}
+      {lesson.concept && lesson.concept.points && (
+        <ul>
+          {lesson.concept.points.map((point) => <li set:html={point} />)}
+        </ul>
+      )}
+
+      <!-- (c) Contoh Kode dengan Penjelasan Baris per Baris -->
+      <h2 id="contoh">Contoh kode</h2>
+      <CodeBlock 
+        filename={lesson.codeExample ? lesson.codeExample.filename : `${lesson.slug}.py`} 
+        highlight={lesson.codeExample ? lesson.codeExample.highlight : []} 
+        code={lesson.codeExample ? lesson.codeExample.code : `# ${lesson.title}`}
+      />
+      {lesson.codeExample && lesson.codeExample.explanations && (
+        <>
+          <h3>Penjelasan baris demi baris</h3>
+          <ol>
+            {lesson.codeExample.explanations.map((exp) => <li set:html={exp} />)}
+          </ol>
+        </>
+      )}
+
+      <!-- (d) Kesalahan Umum (Awas Jebakan) -->
+      <h2 id="jebakan">Kesalahan umum</h2>
+      <Callout type="warning" title={lesson.trap ? lesson.trap.title : 'Awas Jebakan'}>
+        <span set:html={lesson.trap ? lesson.trap.text : 'Perhatikan detail tanda baca dan ejaan saat menulis kode.'} />
+      </Callout>
+
+      <!-- (e) Mini Latihan -->
+      <h2 id="latihan">Mini latihan</h2>
+      <p set:html={lesson.practice ? lesson.practice.instruction : 'Coba jalankan dan ubah kode berikut!'} />
+      {lesson.practice && lesson.practice.code && (
+        <CodeBlock filename="mini_latihan.py" playground={true} code={lesson.practice.code} />
+      )}
+
+      <!-- (f) Quiz 3-5 Soal Pilihan Ganda -->
+      <h2 id="quiz">Cek pemahamanmu</h2>
+      {lesson.quizzes && lesson.quizzes.length > 0 ? (
+        lesson.quizzes.map((quiz, index) => (
+          <QuizCard 
+            id={`${lesson.slug}-q${index + 1}`} 
+            question={quiz.question} 
+            options={quiz.options} 
+            answer={quiz.answer} 
+            explanation={quiz.explanation} 
+          />
+        ))
+      ) : (
+        <p>Kuis untuk materi ini sedang disiapkan Pipi.</p>
+      )}
+
+      <!-- (g) Ringkasan "Yang Perlu Diingat" -->
+      <h2 id="ringkasan">Yang perlu diingat</h2>
+      <Callout type="note" title="Catatan penting">
+        {lesson.takeaways && lesson.takeaways.length > 0 ? (
+          <ul>
+            {lesson.takeaways.map((item) => <li set:html={item} />)}
+          </ul>
+        ) : (
+          <p>Pelajari satu konsep kecil setiap sesi dan praktikkan secara konsisten!</p>
+        )}
+      </Callout>
+
+      <!-- (h) Tombol Selesai & Navigasi -->
+      <div style="margin: 36px 0 16px;">
+        <button class="btn primary" data-mark-complete data-heart>âœ“ Tandai selesai</button>
+      </div>
+
+      <nav class="lesson-nav" aria-label="Materi berikutnya">
+        {previous ? (
+          <a class="btn" href={`/belajar/${previous.slug}/`}>â† {previous.title}</a>
+        ) : <span />}
+        {next ? (
+          <a class="btn soft" href={`/belajar/${next.slug}/`}>{next.title} â†’</a>
+        ) : <span />}
+      </nav>
+    </article>
+
+    <!-- Sidebar Daftar Isi & Fun Fact -->
+    <aside class="toc">
+      <button class="btn small mobile-toc-toggle" data-toc-toggle aria-expanded="false">Daftar isi</button>
+      <div class="card">
+        <strong>Di materi ini</strong>
+        <ol>
+          <li><a href="#analogi">Mulai dulu</a></li>
+          <li><a href="#konsep">Konsep inti</a></li>
+          <li><a href="#contoh">Contoh kode</a></li>
+          <li><a href="#jebakan">Awas jebakan</a></li>
+          <li><a href="#latihan">Mini latihan</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#ringkasan">Ringkasan</a></li>
+        </ol>
+      </div>
+    </aside>
+    <aside class="lesson-side" aria-label="Ringkasan belajar">
+      <div class="card"><span class="eyebrow">Progres belajarmu</span><strong class="side-progress" data-global-progress>0%</strong><div class="progress-track"><div class="progress-fill" data-progress-bar data-level="all" data-total={lessons.length}></div></div><p>Semangat, satu bagian lagi! Pipi menemanimu.</p></div>
+      {lesson.funFact && <Callout type="fact" title="Pipi tahu ini">{lesson.funFact}</Callout>}
+    </aside>
+  </main>
+</BaseLayout>
+
+<style>
+@media(max-width:800px){
+  .lesson-layout{display:block;padding-top:20px}
+  .toc{position:static;margin:22px 0}
+  .toc>div{display:none}
+  .toc.open>div{display:block}
+  .mobile-toc-toggle{display:inline-flex}
+  .lesson-nav .btn{font-size:.83rem;padding:9px}
+}
+</style>
